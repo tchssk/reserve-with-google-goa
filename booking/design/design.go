@@ -106,7 +106,7 @@ var SlotTime = Type("SlotTime", func() {
 	Attribute("availability_tag", String)
 	Attribute("resource_ids", ResourceIds)
 	Attribute("confirmation_mode", String, func() {
-		Enum(ConfirmationMode)
+		Enum(ConfirmationMode...)
 	})
 	Required(
 		"service_id",
@@ -136,7 +136,7 @@ const (
 	DurationRequirementMustShowDuration  = "MUST_SHOW_DURATION"
 )
 
-var DurationRequirement = []string{
+var DurationRequirement = []interface{}{
 	DurationRequirementUnspecified,
 	DurationRequirementDoNotShowDuration,
 	DurationRequirementMustShowDuration,
@@ -146,7 +146,9 @@ var CheckAvailabilityResponse = Type("CheckAvailabilityResponse", func() {
 	Attribute("slot", Slot)
 	Attribute("count_available", Int32)
 	Attribute("last_online_cancellable_sec", Int64)
-	Attribute("duration_requirement", DurationRequirement)
+	Attribute("duration_requirement", String, func() {
+		Enum(DurationRequirement...)
+	})
 	Attribute("availability_update", AvailabilityUpdate)
 	Required(
 		"slot",
@@ -178,10 +180,10 @@ var GetBookingStatusRequest = Type("GetBookingStatusRequest", func() {
 var GetBookingStatusResponse = Type("GetBookingStatusResponse", func() {
 	Attribute("booking_id", String)
 	Attribute("booking_status", String, func() {
-		Enum(BookingStatus)
+		Enum(BookingStatus...)
 	})
 	Attribute("prepayment_status", String, func() {
-		Enum(PrepaymentStatus)
+		Enum(PrepaymentStatus...)
 	})
 	Required(
 		"booking_id",
@@ -292,7 +294,9 @@ var Booking = Type("Booking", func() {
 	Attribute("booking_id", String)
 	Attribute("slot", Slot)
 	Attribute("user_information", UserInformation)
-	Attribute("status", BookingStatus)
+	Attribute("status", String, func() {
+		Enum(BookingStatus...)
+	})
 	Attribute("payment_information", PaymentInformation)
 	Attribute("virtual_session_info", VirtualSessionInfo)
 	Attribute("offer_info", OfferInfo)
@@ -312,7 +316,7 @@ const (
 	BookingStatusDeclinedByMerchant          = "DECLINED_BY_MERCHANT"
 )
 
-var BookingStatus = []string{
+var BookingStatus = []interface{}{
 	BookingStatusUnspecified,
 	BookingStatusConfirmed,
 	BookingStatusPendingMerchantConfirmation,
@@ -353,7 +357,7 @@ const (
 	CausePaymentRequires3ds1          = "PAYMENT_REQUIRES_3DS1"
 )
 
-var Cause = []string{
+var Cause = []interface{}{
 	CauseUnspecified,
 	CauseSlotUnavailable,
 	CauseSlotAlreadyBookedByUser,
@@ -392,8 +396,12 @@ var PaymentFailureInformation = Type("PaymentFailureInformation", func() {
 })
 
 var BookingFailure = Type("BookingFailure", func() {
-	Attribute("cause", Cause)
-	Attribute("rejected_card_type", CreditCardType)
+	Attribute("cause", String, func() {
+		Enum(Cause...)
+	})
+	Attribute("rejected_card_type", String, func() {
+		Enum(CreditCardType...)
+	})
 	Attribute("description", String)
 	Attribute("payment_failure", PaymentFailureInformation)
 	Required("cause")
@@ -408,7 +416,7 @@ const (
 	CreditCardTypeJCB             = "JCB"
 )
 
-var CreditCardType = []string{
+var CreditCardType = []interface{}{
 	CreditCardTypeUnspecified,
 	CreditCardTypeVisa,
 	CreditCardTypeMastercard,
@@ -438,14 +446,16 @@ const (
 	PaymentProcessorBraintree   = "PROCESSOR_BRAINTREE"
 )
 
-var PaymentProcessor = []string{
+var PaymentProcessor = []interface{}{
 	PaymentProcessorUnspecified,
 	PaymentProcessorStripe,
 	PaymentProcessorBraintree,
 }
 
 var PaymentProcessingParameters = Type("PaymentProcessingParameters", func() {
-	Attribute("processor", PaymentProcessor)
+	Attribute("processor", String, func() {
+		Enum(PaymentProcessor...)
+	})
 	Attribute("payment_method_token", String)
 	Attribute("unparsed_payment_method_token", String)
 	Attribute("version", String)
@@ -464,7 +474,7 @@ const (
 	PaymentOptionTypeUnlimitedUse = "PAYMENT_OPTION_UNLIMITED_USE"
 )
 
-var PaymentOptionType = []string{
+var PaymentOptionType = []interface{}{
 	PaymentOptionTypeUnspecified,
 	PaymentOptionTypeSingleUse,
 	PaymentOptionTypeMultiUse,
@@ -475,7 +485,9 @@ var UserPaymentOption = Type("UserPaymentOption", func() {
 	Attribute("user_payment_option_id", String)
 	Attribute("valid_start_time_sec", Int64)
 	Attribute("valid_end_time_sec", Int64)
-	Attribute("type", PaymentOptionType)
+	Attribute("type", String, func() {
+		Enum(PaymentOptionType...)
+	})
 	Attribute("original_count", Int32)
 	Attribute("current_count", Int32)
 	Attribute("payment_option_id", String)
@@ -494,14 +506,16 @@ const (
 	PaymentProcessedByPartner     = "PROCESSED_BY_PARTNER"
 )
 
-var PaymentProcessedBy = []string{
+var PaymentProcessedBy = []interface{}{
 	PaymentProcessedByUnspecified,
 	PaymentProcessedByGoogle,
 	PaymentProcessedByPartner,
 }
 
 var PaymentInformation = Type("PaymentInformation", func() {
-	Attribute("prepayment_status", PrepaymentStatus)
+	Attribute("prepayment_status", String, func() {
+		Enum(PrepaymentStatus...)
+	})
 	Attribute("payment_transaction_id", String)
 	Attribute("price", Price)
 	Attribute("tax_amount", Price)
@@ -509,7 +523,9 @@ var PaymentInformation = Type("PaymentInformation", func() {
 	Attribute("fees_and_taxes", Price)
 	Attribute("deposit", Deposit)
 	Attribute("no_show_fee", NoShowFee)
-	Attribute("payment_processed_by", PaymentProcessedBy)
+	Attribute("payment_processed_by", String, func() {
+		Enum(PaymentProcessedBy...)
+	})
 	Attribute("payment_option_id", String)
 	Attribute("user_payment_option_id", String)
 	Attribute("fraud_signals", String)
@@ -530,7 +546,7 @@ const (
 	PrepaymentStatusCredited    = "PREPAYMENT_CREDITED"
 )
 
-var PrepaymentStatus = []string{
+var PrepaymentStatus = []interface{}{
 	PrepaymentStatusUnspecified,
 	PrepaymentStatusProvided,
 	PrepaymentStatusNotProvided,
@@ -553,14 +569,16 @@ const (
 	PriceTypePerPerson        = "PER_PERSON"
 )
 
-var PriceType = []string{
+var PriceType = []interface{}{
 	PriceTypeFixedRateDefault,
 	PriceTypePerPerson,
 }
 
 var NoShowFee = Type("NoShowFee", func() {
 	Attribute("fee", Price)
-	Attribute("fee_type", PriceType)
+	Attribute("fee_type", String, func() {
+		Enum(PriceType...)
+	})
 	Required(
 		"fee",
 		"fee_type",
@@ -571,7 +589,7 @@ var Deposit = Type("Deposit", func() {
 	Attribute("deposit", Price)
 	Attribute("min_advance_cancellation_sec", Int64)
 	Attribute("deposit_type", String, func() {
-		Enum(PriceType)
+		Enum(PriceType...)
 	})
 	Required(
 		"deposit",
@@ -588,14 +606,16 @@ const (
 	BillingInformationFormatFull        = "FULL"
 )
 
-var BillingInformationFormat = []string{
+var BillingInformationFormat = []interface{}{
 	BillingInformationFormatUnspecified,
 	BillingInformationFormatMin,
 	BillingInformationFormatFull,
 }
 
 var CardNetworkParameters = Type("CardNetworkParameters", func() {
-	Attribute("card_network", CreditCardType)
+	Attribute("card_network", String, func() {
+		Enum(CreditCardType...)
+	})
 	Attribute("acquirer_bin", String)
 	Attribute("acquirer_merchant_id", String)
 	Required(
@@ -611,7 +631,7 @@ const (
 	AuthMethodCryptogram3DS = "CRYPTOGRAM_3DS"
 )
 
-var AuthMethod = []string{
+var AuthMethod = []interface{}{
 	AuthMethodUnspecified,
 	AuthMethodPanOnly,
 	AuthMethodCryptogram3DS,
@@ -619,11 +639,15 @@ var AuthMethod = []string{
 
 var TokenizationConfig = Type("TokenizationConfig", func() {
 	Attribute("tokenization_parameter", MapOf(String, String))
-	Attribute("billing_information_format", BillingInformationFormat)
+	Attribute("billing_information_format", String, func() {
+		Enum(BillingInformationFormat...)
+	})
 	Attribute("merchant_of_record_name", String)
 	Attribute("payment_country_code", String)
 	Attribute("card_network_parameters", ArrayOf(CardNetworkParameters))
-	Attribute("allowed_auth_methods", ArrayOf(AuthMethod))
+	Attribute("allowed_auth_methods", ArrayOf(String, func() {
+		Enum(AuthMethod...)
+	}))
 	Required(
 		"tokenization_parameter",
 		"billing_information_format",
@@ -635,7 +659,9 @@ var TokenizationConfig = Type("TokenizationConfig", func() {
 })
 
 var CreditCardRestrictions = Type("CreditCardRestrictions", func() {
-	Attribute("credit_card_type", ArrayOf(CreditCardType))
+	Attribute("credit_card_type", ArrayOf(String, func() {
+		Enum(CreditCardType...)
+	}))
 })
 
 // ConfirmationMode specification
@@ -646,7 +672,7 @@ const (
 	ConfirmationModeAsynchronous = "CONFIRMATION_MODE_ASYNCHRONOUS"
 )
 
-var ConfirmationMode = []string{
+var ConfirmationMode = []interface{}{
 	ConfirmationModeUnspecified,
 	ConfirmationModeSynchronous,
 	ConfirmationModeAsynchronous,
@@ -662,7 +688,7 @@ var Slot = Type("Slot", func() {
 	Attribute("availability_tag", String)
 	Attribute("resources", ResourceIds)
 	Attribute("confirmation_mode", String, func() {
-		Enum(ConfirmationMode)
+		Enum(ConfirmationMode...)
 	})
 })
 
