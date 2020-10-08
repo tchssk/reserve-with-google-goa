@@ -8,7 +8,10 @@ const (
 	StatusClientClosedRequest = 499
 )
 
+var BasicAuth = BasicAuthSecurity("basic")
+
 var _ = Service("booking", func() {
+	Security(BasicAuth)
 	Error("bad_request")
 	Error("unauthorized")
 	Error("forbidden")
@@ -21,50 +24,110 @@ var _ = Service("booking", func() {
 	Error("service_unavailable")
 	Error("gateway_timeout")
 	Method("batch_availability_lookup", func() {
-		Payload(BatchAvailabilityLookupRequest)
+		Payload(func() {
+			Username("username")
+			Password("password")
+			Attribute("body", BatchAvailabilityLookupRequest)
+			Required(
+				"username",
+				"password",
+				"body",
+			)
+		})
 		Result(BatchAvailabilityLookupResponse)
 		HTTP(func() {
 			POST("/v3/BatchAvailabilityLookup")
+			Body("body")
 			Response(StatusOK)
 		})
 	})
 	Method("check_availability", func() {
-		Payload(CheckAvailabilityRequest)
+		Payload(func() {
+			Username("username")
+			Password("password")
+			Attribute("body", CheckAvailabilityRequest)
+			Required(
+				"username",
+				"password",
+				"body",
+			)
+		})
 		Result(CheckAvailabilityResponse)
 		HTTP(func() {
 			POST("/v3/CheckAvailability")
+			Body("body")
 			Response(StatusOK)
 		})
 	})
 	Method("create_booking", func() {
-		Payload(CreateBookingRequest)
+		Payload(func() {
+			Username("username")
+			Password("password")
+			Attribute("body", CreateBookingRequest)
+			Required(
+				"username",
+				"password",
+				"body",
+			)
+		})
 		Result(CreateBookingResponse)
 		HTTP(func() {
 			POST("/v3/CreateBooking")
+			Body("body")
 			Response(StatusOK)
 		})
 	})
 	Method("update_booking", func() {
-		Payload(UpdateBookingRequest)
+		Payload(func() {
+			Username("username")
+			Password("password")
+			Attribute("body", UpdateBookingRequest)
+			Required(
+				"username",
+				"password",
+				"body",
+			)
+		})
 		Result(UpdateBookingResponse)
 		HTTP(func() {
 			POST("/v3/UpdateBooking")
+			Body("body")
 			Response(StatusOK)
 		})
 	})
 	Method("get_booking_status", func() {
-		Payload(GetBookingStatusRequest)
+		Payload(func() {
+			Username("username")
+			Password("password")
+			Attribute("body", GetBookingStatusRequest)
+			Required(
+				"username",
+				"password",
+				"body",
+			)
+		})
 		Result(GetBookingStatusResponse)
 		HTTP(func() {
 			POST("/v3/GetBookingStatus")
+			Body("body")
 			Response(StatusOK)
 		})
 	})
 	Method("list_bookings", func() {
-		Payload(ListBookingsRequest)
+		Payload(func() {
+			Username("username")
+			Password("password")
+			Attribute("body", ListBookingsRequest)
+			Required(
+				"username",
+				"password",
+				"body",
+			)
+		})
 		Result(ListBookingsResponse)
 		HTTP(func() {
 			POST("/v3/ListBookings")
+			Body("body")
 			Response(StatusOK)
 		})
 	})
