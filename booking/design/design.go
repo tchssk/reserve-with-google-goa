@@ -258,14 +258,7 @@ var GetBookingStatusResponse = Type("GetBookingStatusResponse", func() {
 // CreateBooking method
 
 var CreateBookingRequest = Type("CreateBookingRequest", func() {
-	Attribute("slot", Slot, func() {
-		Required(
-			"merchant_id",
-			"service_id",
-			"start_sec",
-			"duration_sec",
-		)
-	})
+	Attribute("slot", Slot)
 	Attribute("lease_ref", LeaseReference)
 	Attribute("user_information", UserInformation)
 	Attribute("payment_information", PaymentInformation)
@@ -282,13 +275,7 @@ var CreateBookingRequest = Type("CreateBookingRequest", func() {
 })
 
 var CreateBookingResponse = Type("CreateBookingResponse", func() {
-	Attribute("booking", Booking, func() {
-		Required(
-			"slot",
-			"user_information",
-			"status",
-		)
-	})
+	Attribute("booking", Booking)
 	Attribute("user_payment_option", UserPaymentOption)
 	Attribute("booking_failure", BookingFailure)
 	Required("booking")
