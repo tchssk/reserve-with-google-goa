@@ -10,7 +10,7 @@ const (
 
 var BasicAuth = BasicAuthSecurity("basic")
 
-var _ = Service("booking", func() {
+var _ = Service("waitlist", func() {
 	Security(BasicAuth)
 	Error("bad_request")
 	Error("unauthorized")
