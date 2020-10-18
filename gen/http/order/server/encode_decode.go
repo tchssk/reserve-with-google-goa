@@ -645,11 +645,9 @@ func unmarshalIntakeFormAnswersRequestBodyRequestBodyToOrderIntakeFormAnswers(v 
 		return nil
 	}
 	res := &order.IntakeFormAnswers{}
-	if v.Answer != nil {
-		res.Answer = make([]*order.IntakeFormFieldAnswer, len(v.Answer))
-		for i, val := range v.Answer {
-			res.Answer[i] = unmarshalIntakeFormFieldAnswerRequestBodyRequestBodyToOrderIntakeFormFieldAnswer(val)
-		}
+	res.Answer = make([]*order.IntakeFormFieldAnswer, len(v.Answer))
+	for i, val := range v.Answer {
+		res.Answer[i] = unmarshalIntakeFormFieldAnswerRequestBodyRequestBodyToOrderIntakeFormFieldAnswer(val)
 	}
 
 	return res
@@ -659,9 +657,6 @@ func unmarshalIntakeFormAnswersRequestBodyRequestBodyToOrderIntakeFormAnswers(v 
 // builds a value of type *order.IntakeFormFieldAnswer from a value of type
 // *IntakeFormFieldAnswerRequestBodyRequestBody.
 func unmarshalIntakeFormFieldAnswerRequestBodyRequestBodyToOrderIntakeFormFieldAnswer(v *IntakeFormFieldAnswerRequestBodyRequestBody) *order.IntakeFormFieldAnswer {
-	if v == nil {
-		return nil
-	}
 	res := &order.IntakeFormFieldAnswer{
 		ID: *v.ID,
 	}
@@ -798,9 +793,6 @@ func marshalOrderIntakeFormAnswersToIntakeFormAnswersResponseBody(v *order.Intak
 // a value of type *IntakeFormFieldAnswerResponseBody from a value of type
 // *order.IntakeFormFieldAnswer.
 func marshalOrderIntakeFormFieldAnswerToIntakeFormFieldAnswerResponseBody(v *order.IntakeFormFieldAnswer) *IntakeFormFieldAnswerResponseBody {
-	if v == nil {
-		return nil
-	}
 	res := &IntakeFormFieldAnswerResponseBody{
 		ID: v.ID,
 	}

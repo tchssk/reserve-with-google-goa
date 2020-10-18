@@ -698,7 +698,7 @@ type PriceRequestBodyRequestBody struct {
 // IntakeFormAnswersRequestBodyRequestBody is used to define fields on request
 // body types.
 type IntakeFormAnswersRequestBodyRequestBody struct {
-	Answer []*IntakeFormFieldAnswerRequestBodyRequestBody `form:"answer,omitempty" json:"answer,omitempty" xml:"answer,omitempty"`
+	Answer []*IntakeFormFieldAnswerRequestBodyRequestBody `form:"answer" json:"answer" xml:"answer"`
 }
 
 // IntakeFormFieldAnswerRequestBodyRequestBody is used to define fields on
@@ -2474,6 +2474,15 @@ func ValidateLineItemRequestBodyRequestBody(body *LineItemRequestBodyRequestBody
 	return
 }
 
+// ValidateIntakeFormAnswersRequestBodyRequestBody runs the validations defined
+// on IntakeFormAnswersRequestBodyRequestBody
+func ValidateIntakeFormAnswersRequestBodyRequestBody(body *IntakeFormAnswersRequestBodyRequestBody) (err error) {
+	if body.Answer == nil {
+		err = goa.MergeErrors(err, goa.MissingFieldError("answer", "body"))
+	}
+	return
+}
+
 // ValidateIntakeFormFieldAnswerRequestBodyRequestBody runs the validations
 // defined on IntakeFormFieldAnswerRequestBodyRequestBody
 func ValidateIntakeFormFieldAnswerRequestBodyRequestBody(body *IntakeFormFieldAnswerRequestBodyRequestBody) (err error) {
@@ -2619,6 +2628,9 @@ func ValidatePriceResponseBody(body *PriceResponseBody) (err error) {
 // ValidateIntakeFormAnswersResponseBody runs the validations defined on
 // IntakeFormAnswersResponseBody
 func ValidateIntakeFormAnswersResponseBody(body *IntakeFormAnswersResponseBody) (err error) {
+	if body.Answer == nil {
+		err = goa.MergeErrors(err, goa.MissingFieldError("answer", "body"))
+	}
 	for _, e := range body.Answer {
 		if e != nil {
 			if err2 := ValidateIntakeFormFieldAnswerResponseBody(e); err2 != nil {

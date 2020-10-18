@@ -6096,6 +6096,8 @@ definitions:
         - Dignissimos et.
         - Quasi est placeat vel doloribus facilis.
         - Ut est vel laborum.
+    required:
+    - answer
   IntakeFormAnswersResponseBody:
     title: IntakeFormAnswersResponseBody
     type: object
@@ -6147,6 +6149,8 @@ definitions:
         - Tenetur at distinctio magnam mollitia sit.
         - Doloribus quia provident.
         - Deleniti nobis impedit numquam molestiae facere ut.
+    required:
+    - answer
   IntakeFormFieldAnswerRequestBodyRequestBody:
     title: IntakeFormFieldAnswerRequestBodyRequestBody
     type: object

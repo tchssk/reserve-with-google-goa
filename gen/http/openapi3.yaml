@@ -7675,6 +7675,8 @@ components:
           - Dignissimos et.
           - Quasi est placeat vel doloribus facilis.
           - Ut est vel laborum.
+      required:
+      - answer
     IntakeFormFieldAnswer:
       type: object
       properties:

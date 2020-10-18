@@ -715,7 +715,7 @@ type PriceResponseBody struct {
 // IntakeFormAnswersResponseBody is used to define fields on response body
 // types.
 type IntakeFormAnswersResponseBody struct {
-	Answer []*IntakeFormFieldAnswerResponseBody `form:"answer,omitempty" json:"answer,omitempty" xml:"answer,omitempty"`
+	Answer []*IntakeFormFieldAnswerResponseBody `form:"answer" json:"answer" xml:"answer"`
 }
 
 // IntakeFormFieldAnswerResponseBody is used to define fields on response body
@@ -1696,6 +1696,9 @@ func ValidatePriceRequestBodyRequestBody(body *PriceRequestBodyRequestBody) (err
 // ValidateIntakeFormAnswersRequestBodyRequestBody runs the validations defined
 // on IntakeFormAnswersRequestBodyRequestBody
 func ValidateIntakeFormAnswersRequestBodyRequestBody(body *IntakeFormAnswersRequestBodyRequestBody) (err error) {
+	if body.Answer == nil {
+		err = goa.MergeErrors(err, goa.MissingFieldError("answer", "body"))
+	}
 	for _, e := range body.Answer {
 		if e != nil {
 			if err2 := ValidateIntakeFormFieldAnswerRequestBodyRequestBody(e); err2 != nil {
