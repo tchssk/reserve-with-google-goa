@@ -226,6 +226,7 @@ var LineItem = Type("LineItem", func() {
 
 var IntakeFormAnswers = Type("IntakeFormAnswers", func() {
 	Attribute("answer", ArrayOf(IntakeFormFieldAnswer))
+	Required("answer")
 })
 
 var IntakeFormFieldAnswer = Type("IntakeFormFieldAnswer", func() {
