@@ -168,8 +168,8 @@ var PaymentOptionType = []interface{}{
 
 var UserPaymentOption = Type("UserPaymentOption", func() {
 	Attribute("user_payment_option_id", String)
-	Attribute("valid_start_time_sec", Int64)
-	Attribute("valid_end_time_sec", Int64)
+	Attribute("valid_start_time_sec", String)
+	Attribute("valid_end_time_sec", String)
 	Attribute("type", String, func() {
 		Enum(PaymentOptionType...)
 	})
@@ -272,7 +272,7 @@ var NoShowFee = Type("NoShowFee", func() {
 
 var Deposit = Type("Deposit", func() {
 	Attribute("deposit", Price)
-	Attribute("min_advance_cancellation_sec", Int64)
+	Attribute("min_advance_cancellation_sec", String)
 	Attribute("deposit_type", String, func() {
 		Enum(PriceType...)
 	})
@@ -368,8 +368,8 @@ var ConfirmationMode = []interface{}{
 var Slot = Type("Slot", func() {
 	Attribute("merchant_id", String)
 	Attribute("service_id", String)
-	Attribute("start_sec", Int64)
-	Attribute("duration_sec", Int64)
+	Attribute("start_sec", String)
+	Attribute("duration_sec", String)
 	Attribute("availability_tag", String)
 	Attribute("resources", ResourceIds)
 	Attribute("confirmation_mode", String, func() {

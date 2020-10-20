@@ -141,8 +141,8 @@ var WaitlistStatus = []interface{}{
 }
 
 var EstimatedSeatTimeRange = Type("EstimatedSeatTimeRange", func() {
-	Attribute("start_seconds", Int64)
-	Attribute("end_seconds", Int64)
+	Attribute("start_seconds", String)
+	Attribute("end_seconds", String)
 	Required(
 		"start_seconds",
 		"end_seconds",
@@ -251,12 +251,12 @@ var WaitlistEntryState = []interface{}{
 }
 
 var WaitlistEntryStateTimes = Type("WaitlistEntryStateTimes", func() {
-	Attribute("created_time_seconds", Int64)
-	Attribute("canceled_time_seconds", Int64)
-	Attribute("service_readied_time_seconds", Int64)
-	Attribute("checked_in_time_seconds", Int64)
-	Attribute("seated_time_seconds", Int64)
-	Attribute("marked_no_show_time_seconds", Int64)
+	Attribute("created_time_seconds", String)
+	Attribute("canceled_time_seconds", String)
+	Attribute("service_readied_time_seconds", String)
+	Attribute("checked_in_time_seconds", String)
+	Attribute("seated_time_seconds", String)
+	Attribute("marked_no_show_time_seconds", String)
 	Required("created_time_seconds")
 })
 

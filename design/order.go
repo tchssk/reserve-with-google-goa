@@ -102,7 +102,7 @@ var CheckOrderFulfillabilityResponse = Type("CheckOrderFulfillabilityResponse", 
 	Attribute("fulfillability", OrderFulfillability)
 	Attribute("fees_and_taxes", Price)
 	Attribute("fees", Fees)
-	Attribute("cart_expiration_sec", Int64)
+	Attribute("cart_expiration_sec", String)
 })
 
 var Fees = Type("Fees", func() {
@@ -205,8 +205,8 @@ var WarningReason = []interface{}{
 
 var LineItem = Type("LineItem", func() {
 	Attribute("service_id", String)
-	Attribute("start_sec", Int64)
-	Attribute("duration_sec", Int64)
+	Attribute("start_sec", String)
+	Attribute("duration_sec", String)
 	Attribute("tickets", ArrayOf(OrderedTickets))
 	Attribute("price", Price)
 	Attribute("status", String, func() {

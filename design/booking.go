@@ -158,8 +158,8 @@ var BatchAvailabilityLookupResponse = Type("BatchAvailabilityLookupResponse", fu
 
 var SlotTime = Type("SlotTime", func() {
 	Attribute("service_id", String)
-	Attribute("start_sec", Int64)
-	Attribute("duration_sec", Int64)
+	Attribute("start_sec", String)
+	Attribute("duration_sec", String)
 	Attribute("availability_tag", String)
 	Attribute("resource_ids", ResourceIds)
 	Attribute("confirmation_mode", String, func() {
@@ -202,7 +202,7 @@ var DurationRequirement = []interface{}{
 var CheckAvailabilityResponse = Type("CheckAvailabilityResponse", func() {
 	Attribute("slot", Slot)
 	Attribute("count_available", Int32)
-	Attribute("last_online_cancellable_sec", Int64)
+	Attribute("last_online_cancellable_sec", String)
 	Attribute("duration_requirement", String, func() {
 		Enum(DurationRequirement...)
 	})
@@ -292,7 +292,7 @@ var Lease = Type("Lease", func() {
 	Attribute("lease_id", String)
 	Attribute("slot", Slot)
 	Attribute("user_reference", String)
-	Attribute("lease_expiration_time_sec", Int64)
+	Attribute("lease_expiration_time_sec", String)
 	Required(
 		"lease_id",
 		"slot",
