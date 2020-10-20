@@ -54,7 +54,7 @@ type CheckOrderFulfillabilityResponse struct {
 	Fulfillability    *OrderFulfillability
 	FeesAndTaxes      *Price
 	Fees              *Fees
-	CartExpirationSec *int64
+	CartExpirationSec *string
 }
 
 // CreateOrderPayload is the payload type of the order service create_order
@@ -94,8 +94,8 @@ type CheckOrderFulfillabilityRequest struct {
 
 type LineItem struct {
 	ServiceID         string
-	StartSec          int64
-	DurationSec       int64
+	StartSec          string
+	DurationSec       string
 	Tickets           []*OrderedTickets
 	Price             *Price
 	Status            *string
@@ -242,7 +242,7 @@ type PaymentInformation struct {
 
 type Deposit struct {
 	Deposit                   *Price
-	MinAdvanceCancellationSec int64
+	MinAdvanceCancellationSec string
 	DepositType               string
 }
 

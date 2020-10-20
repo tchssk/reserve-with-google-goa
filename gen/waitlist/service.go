@@ -112,8 +112,8 @@ type WaitLength struct {
 }
 
 type EstimatedSeatTimeRange struct {
-	StartSeconds int64
-	EndSeconds   int64
+	StartSeconds string
+	EndSeconds   string
 }
 
 type CreateWaitlistEntryRequest struct {
@@ -159,12 +159,12 @@ type WaitlistEntry struct {
 }
 
 type WaitlistEntryStateTimes struct {
-	CreatedTimeSeconds        int64
-	CanceledTimeSeconds       *int64
-	ServiceReadiedTimeSeconds *int64
-	CheckedInTimeSeconds      *int64
-	SeatedTimeSeconds         *int64
-	MarkedNoShowTimeSeconds   *int64
+	CreatedTimeSeconds        string
+	CanceledTimeSeconds       *string
+	ServiceReadiedTimeSeconds *string
+	CheckedInTimeSeconds      *string
+	SeatedTimeSeconds         *string
+	MarkedNoShowTimeSeconds   *string
 }
 
 type DeleteWaitlistEntryRequest struct {

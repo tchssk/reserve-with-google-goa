@@ -911,8 +911,8 @@ type WaitLengthResponseBody struct {
 // EstimatedSeatTimeRangeResponseBody is used to define fields on response body
 // types.
 type EstimatedSeatTimeRangeResponseBody struct {
-	StartSeconds int64 `form:"start_seconds" json:"start_seconds" xml:"start_seconds"`
-	EndSeconds   int64 `form:"end_seconds" json:"end_seconds" xml:"end_seconds"`
+	StartSeconds string `form:"start_seconds" json:"start_seconds" xml:"start_seconds"`
+	EndSeconds   string `form:"end_seconds" json:"end_seconds" xml:"end_seconds"`
 }
 
 // WaitlistBusinessLogicFailureResponseBody is used to define fields on
@@ -932,12 +932,12 @@ type WaitlistEntryResponseBody struct {
 // WaitlistEntryStateTimesResponseBody is used to define fields on response
 // body types.
 type WaitlistEntryStateTimesResponseBody struct {
-	CreatedTimeSeconds        int64  `form:"created_time_seconds" json:"created_time_seconds" xml:"created_time_seconds"`
-	CanceledTimeSeconds       *int64 `form:"canceled_time_seconds,omitempty" json:"canceled_time_seconds,omitempty" xml:"canceled_time_seconds,omitempty"`
-	ServiceReadiedTimeSeconds *int64 `form:"service_readied_time_seconds,omitempty" json:"service_readied_time_seconds,omitempty" xml:"service_readied_time_seconds,omitempty"`
-	CheckedInTimeSeconds      *int64 `form:"checked_in_time_seconds,omitempty" json:"checked_in_time_seconds,omitempty" xml:"checked_in_time_seconds,omitempty"`
-	SeatedTimeSeconds         *int64 `form:"seated_time_seconds,omitempty" json:"seated_time_seconds,omitempty" xml:"seated_time_seconds,omitempty"`
-	MarkedNoShowTimeSeconds   *int64 `form:"marked_no_show_time_seconds,omitempty" json:"marked_no_show_time_seconds,omitempty" xml:"marked_no_show_time_seconds,omitempty"`
+	CreatedTimeSeconds        string  `form:"created_time_seconds" json:"created_time_seconds" xml:"created_time_seconds"`
+	CanceledTimeSeconds       *string `form:"canceled_time_seconds,omitempty" json:"canceled_time_seconds,omitempty" xml:"canceled_time_seconds,omitempty"`
+	ServiceReadiedTimeSeconds *string `form:"service_readied_time_seconds,omitempty" json:"service_readied_time_seconds,omitempty" xml:"service_readied_time_seconds,omitempty"`
+	CheckedInTimeSeconds      *string `form:"checked_in_time_seconds,omitempty" json:"checked_in_time_seconds,omitempty" xml:"checked_in_time_seconds,omitempty"`
+	SeatedTimeSeconds         *string `form:"seated_time_seconds,omitempty" json:"seated_time_seconds,omitempty" xml:"seated_time_seconds,omitempty"`
+	MarkedNoShowTimeSeconds   *string `form:"marked_no_show_time_seconds,omitempty" json:"marked_no_show_time_seconds,omitempty" xml:"marked_no_show_time_seconds,omitempty"`
 }
 
 // UserInformationRequestBodyRequestBody is used to define fields on request

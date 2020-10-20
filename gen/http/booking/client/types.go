@@ -68,7 +68,7 @@ type BatchAvailabilityLookupResponseBody struct {
 type CheckAvailabilityResponseBody struct {
 	Slot                     *SlotResponseBody               `form:"slot,omitempty" json:"slot,omitempty" xml:"slot,omitempty"`
 	CountAvailable           *int32                          `form:"count_available,omitempty" json:"count_available,omitempty" xml:"count_available,omitempty"`
-	LastOnlineCancellableSec *int64                          `form:"last_online_cancellable_sec,omitempty" json:"last_online_cancellable_sec,omitempty" xml:"last_online_cancellable_sec,omitempty"`
+	LastOnlineCancellableSec *string                         `form:"last_online_cancellable_sec,omitempty" json:"last_online_cancellable_sec,omitempty" xml:"last_online_cancellable_sec,omitempty"`
 	DurationRequirement      *string                         `form:"duration_requirement,omitempty" json:"duration_requirement,omitempty" xml:"duration_requirement,omitempty"`
 	AvailabilityUpdate       *AvailabilityUpdateResponseBody `form:"availability_update,omitempty" json:"availability_update,omitempty" xml:"availability_update,omitempty"`
 }
@@ -1332,8 +1332,8 @@ type ListBookingsGatewayTimeoutResponseBody struct {
 // types.
 type SlotTimeRequestBodyRequestBody struct {
 	ServiceID        string                             `form:"service_id" json:"service_id" xml:"service_id"`
-	StartSec         int64                              `form:"start_sec" json:"start_sec" xml:"start_sec"`
-	DurationSec      *int64                             `form:"duration_sec,omitempty" json:"duration_sec,omitempty" xml:"duration_sec,omitempty"`
+	StartSec         string                             `form:"start_sec" json:"start_sec" xml:"start_sec"`
+	DurationSec      *string                            `form:"duration_sec,omitempty" json:"duration_sec,omitempty" xml:"duration_sec,omitempty"`
 	AvailabilityTag  *string                            `form:"availability_tag,omitempty" json:"availability_tag,omitempty" xml:"availability_tag,omitempty"`
 	ResourceIds      *ResourceIdsRequestBodyRequestBody `form:"resource_ids,omitempty" json:"resource_ids,omitempty" xml:"resource_ids,omitempty"`
 	ConfirmationMode *string                            `form:"confirmation_mode,omitempty" json:"confirmation_mode,omitempty" xml:"confirmation_mode,omitempty"`
@@ -1357,8 +1357,8 @@ type SlotTimeAvailabilityResponseBody struct {
 // SlotTimeResponseBody is used to define fields on response body types.
 type SlotTimeResponseBody struct {
 	ServiceID        *string                  `form:"service_id,omitempty" json:"service_id,omitempty" xml:"service_id,omitempty"`
-	StartSec         *int64                   `form:"start_sec,omitempty" json:"start_sec,omitempty" xml:"start_sec,omitempty"`
-	DurationSec      *int64                   `form:"duration_sec,omitempty" json:"duration_sec,omitempty" xml:"duration_sec,omitempty"`
+	StartSec         *string                  `form:"start_sec,omitempty" json:"start_sec,omitempty" xml:"start_sec,omitempty"`
+	DurationSec      *string                  `form:"duration_sec,omitempty" json:"duration_sec,omitempty" xml:"duration_sec,omitempty"`
 	AvailabilityTag  *string                  `form:"availability_tag,omitempty" json:"availability_tag,omitempty" xml:"availability_tag,omitempty"`
 	ResourceIds      *ResourceIdsResponseBody `form:"resource_ids,omitempty" json:"resource_ids,omitempty" xml:"resource_ids,omitempty"`
 	ConfirmationMode *string                  `form:"confirmation_mode,omitempty" json:"confirmation_mode,omitempty" xml:"confirmation_mode,omitempty"`
@@ -1375,8 +1375,8 @@ type ResourceIdsResponseBody struct {
 type SlotRequestBodyRequestBody struct {
 	MerchantID       *string                            `form:"merchant_id,omitempty" json:"merchant_id,omitempty" xml:"merchant_id,omitempty"`
 	ServiceID        *string                            `form:"service_id,omitempty" json:"service_id,omitempty" xml:"service_id,omitempty"`
-	StartSec         *int64                             `form:"start_sec,omitempty" json:"start_sec,omitempty" xml:"start_sec,omitempty"`
-	DurationSec      *int64                             `form:"duration_sec,omitempty" json:"duration_sec,omitempty" xml:"duration_sec,omitempty"`
+	StartSec         *string                            `form:"start_sec,omitempty" json:"start_sec,omitempty" xml:"start_sec,omitempty"`
+	DurationSec      *string                            `form:"duration_sec,omitempty" json:"duration_sec,omitempty" xml:"duration_sec,omitempty"`
 	AvailabilityTag  *string                            `form:"availability_tag,omitempty" json:"availability_tag,omitempty" xml:"availability_tag,omitempty"`
 	Resources        *ResourceIdsRequestBodyRequestBody `form:"resources,omitempty" json:"resources,omitempty" xml:"resources,omitempty"`
 	ConfirmationMode *string                            `form:"confirmation_mode,omitempty" json:"confirmation_mode,omitempty" xml:"confirmation_mode,omitempty"`
@@ -1386,8 +1386,8 @@ type SlotRequestBodyRequestBody struct {
 type SlotResponseBody struct {
 	MerchantID       *string                  `form:"merchant_id,omitempty" json:"merchant_id,omitempty" xml:"merchant_id,omitempty"`
 	ServiceID        *string                  `form:"service_id,omitempty" json:"service_id,omitempty" xml:"service_id,omitempty"`
-	StartSec         *int64                   `form:"start_sec,omitempty" json:"start_sec,omitempty" xml:"start_sec,omitempty"`
-	DurationSec      *int64                   `form:"duration_sec,omitempty" json:"duration_sec,omitempty" xml:"duration_sec,omitempty"`
+	StartSec         *string                  `form:"start_sec,omitempty" json:"start_sec,omitempty" xml:"start_sec,omitempty"`
+	DurationSec      *string                  `form:"duration_sec,omitempty" json:"duration_sec,omitempty" xml:"duration_sec,omitempty"`
 	AvailabilityTag  *string                  `form:"availability_tag,omitempty" json:"availability_tag,omitempty" xml:"availability_tag,omitempty"`
 	Resources        *ResourceIdsResponseBody `form:"resources,omitempty" json:"resources,omitempty" xml:"resources,omitempty"`
 	ConfirmationMode *string                  `form:"confirmation_mode,omitempty" json:"confirmation_mode,omitempty" xml:"confirmation_mode,omitempty"`
@@ -1462,7 +1462,7 @@ type PriceRequestBodyRequestBody struct {
 // DepositRequestBodyRequestBody is used to define fields on request body types.
 type DepositRequestBodyRequestBody struct {
 	Deposit                   *PriceRequestBodyRequestBody `form:"deposit" json:"deposit" xml:"deposit"`
-	MinAdvanceCancellationSec int64                        `form:"min_advance_cancellation_sec" json:"min_advance_cancellation_sec" xml:"min_advance_cancellation_sec"`
+	MinAdvanceCancellationSec string                       `form:"min_advance_cancellation_sec" json:"min_advance_cancellation_sec" xml:"min_advance_cancellation_sec"`
 	DepositType               string                       `form:"deposit_type" json:"deposit_type" xml:"deposit_type"`
 }
 
@@ -1563,7 +1563,7 @@ type PriceResponseBody struct {
 // DepositResponseBody is used to define fields on response body types.
 type DepositResponseBody struct {
 	Deposit                   *PriceResponseBody `form:"deposit,omitempty" json:"deposit,omitempty" xml:"deposit,omitempty"`
-	MinAdvanceCancellationSec *int64             `form:"min_advance_cancellation_sec,omitempty" json:"min_advance_cancellation_sec,omitempty" xml:"min_advance_cancellation_sec,omitempty"`
+	MinAdvanceCancellationSec *string            `form:"min_advance_cancellation_sec,omitempty" json:"min_advance_cancellation_sec,omitempty" xml:"min_advance_cancellation_sec,omitempty"`
 	DepositType               *string            `form:"deposit_type,omitempty" json:"deposit_type,omitempty" xml:"deposit_type,omitempty"`
 }
 
@@ -1590,8 +1590,8 @@ type OfferInfoResponseBody struct {
 // types.
 type UserPaymentOptionResponseBody struct {
 	UserPaymentOptionID *string `form:"user_payment_option_id,omitempty" json:"user_payment_option_id,omitempty" xml:"user_payment_option_id,omitempty"`
-	ValidStartTimeSec   *int64  `form:"valid_start_time_sec,omitempty" json:"valid_start_time_sec,omitempty" xml:"valid_start_time_sec,omitempty"`
-	ValidEndTimeSec     *int64  `form:"valid_end_time_sec,omitempty" json:"valid_end_time_sec,omitempty" xml:"valid_end_time_sec,omitempty"`
+	ValidStartTimeSec   *string `form:"valid_start_time_sec,omitempty" json:"valid_start_time_sec,omitempty" xml:"valid_start_time_sec,omitempty"`
+	ValidEndTimeSec     *string `form:"valid_end_time_sec,omitempty" json:"valid_end_time_sec,omitempty" xml:"valid_end_time_sec,omitempty"`
 	Type                *string `form:"type,omitempty" json:"type,omitempty" xml:"type,omitempty"`
 	OriginalCount       *int32  `form:"original_count,omitempty" json:"original_count,omitempty" xml:"original_count,omitempty"`
 	CurrentCount        *int32  `form:"current_count,omitempty" json:"current_count,omitempty" xml:"current_count,omitempty"`

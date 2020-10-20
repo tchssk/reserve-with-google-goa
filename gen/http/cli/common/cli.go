@@ -35,172 +35,231 @@ waitlist (batch-get-wait-estimates|create-waitlist-entry|get-waitlist-entry|dele
 
 // UsageExamples produces an example of a valid invocation of the CLI tool.
 func UsageExamples() string {
-	return os.Args[0] + ` common health-check --username "Ipsa voluptatem." --password "Nisi doloribus ut qui pariatur."` + "\n" +
+	return os.Args[0] + ` common health-check --username "Dolores omnis et labore ea." --password "Atque perspiciatis harum fugiat delectus explicabo."` + "\n" +
 		os.Args[0] + ` booking batch-availability-lookup --body '{
-      "merchant_id": "Ipsa incidunt non tempora deleniti ipsa et.",
+      "merchant_id": "Quia voluptates porro nulla praesentium.",
       "slot_time": [
          {
-            "availability_tag": "Accusamus aspernatur labore at quo.",
-            "confirmation_mode": "CONFIRMATION_MODE_UNSPECIFIED",
-            "duration_sec": 8435747200459079087,
+            "availability_tag": "Doloribus aliquam rerum sed ea et.",
+            "confirmation_mode": "CONFIRMATION_MODE_ASYNCHRONOUS",
+            "duration_sec": "Sit aspernatur molestiae.",
             "resource_ids": {
-               "party_size": 1294063121,
-               "room_id": "Quia et ea rerum est expedita.",
-               "staff_id": "Adipisci et impedit velit dignissimos autem fuga."
+               "party_size": 32244509,
+               "room_id": "Quidem omnis consectetur voluptatibus.",
+               "staff_id": "Provident qui omnis reiciendis qui."
             },
-            "service_id": "Ex soluta aut veritatis soluta quod.",
-            "start_sec": 5917608252949059848
+            "service_id": "Omnis modi error veritatis quia.",
+            "start_sec": "Fugiat ut porro ullam qui."
          },
          {
-            "availability_tag": "Accusamus aspernatur labore at quo.",
-            "confirmation_mode": "CONFIRMATION_MODE_UNSPECIFIED",
-            "duration_sec": 8435747200459079087,
+            "availability_tag": "Doloribus aliquam rerum sed ea et.",
+            "confirmation_mode": "CONFIRMATION_MODE_ASYNCHRONOUS",
+            "duration_sec": "Sit aspernatur molestiae.",
             "resource_ids": {
-               "party_size": 1294063121,
-               "room_id": "Quia et ea rerum est expedita.",
-               "staff_id": "Adipisci et impedit velit dignissimos autem fuga."
+               "party_size": 32244509,
+               "room_id": "Quidem omnis consectetur voluptatibus.",
+               "staff_id": "Provident qui omnis reiciendis qui."
             },
-            "service_id": "Ex soluta aut veritatis soluta quod.",
-            "start_sec": 5917608252949059848
+            "service_id": "Omnis modi error veritatis quia.",
+            "start_sec": "Fugiat ut porro ullam qui."
          },
          {
-            "availability_tag": "Accusamus aspernatur labore at quo.",
-            "confirmation_mode": "CONFIRMATION_MODE_UNSPECIFIED",
-            "duration_sec": 8435747200459079087,
+            "availability_tag": "Doloribus aliquam rerum sed ea et.",
+            "confirmation_mode": "CONFIRMATION_MODE_ASYNCHRONOUS",
+            "duration_sec": "Sit aspernatur molestiae.",
             "resource_ids": {
-               "party_size": 1294063121,
-               "room_id": "Quia et ea rerum est expedita.",
-               "staff_id": "Adipisci et impedit velit dignissimos autem fuga."
+               "party_size": 32244509,
+               "room_id": "Quidem omnis consectetur voluptatibus.",
+               "staff_id": "Provident qui omnis reiciendis qui."
             },
-            "service_id": "Ex soluta aut veritatis soluta quod.",
-            "start_sec": 5917608252949059848
-         },
-         {
-            "availability_tag": "Accusamus aspernatur labore at quo.",
-            "confirmation_mode": "CONFIRMATION_MODE_UNSPECIFIED",
-            "duration_sec": 8435747200459079087,
-            "resource_ids": {
-               "party_size": 1294063121,
-               "room_id": "Quia et ea rerum est expedita.",
-               "staff_id": "Adipisci et impedit velit dignissimos autem fuga."
-            },
-            "service_id": "Ex soluta aut veritatis soluta quod.",
-            "start_sec": 5917608252949059848
+            "service_id": "Omnis modi error veritatis quia.",
+            "start_sec": "Fugiat ut porro ullam qui."
          }
       ]
-   }' --username "Doloribus ut." --password "Esse ex nisi quasi."` + "\n" +
+   }' --username "Enim ut optio vero corporis quam veniam." --password "Nesciunt occaecati maxime perspiciatis."` + "\n" +
 		os.Args[0] + ` order check-order-fulfillability --body '{
-      "cart_id": "Nisi odit alias et at magni.",
+      "cart_id": "Molestias est minima eum porro sunt earum.",
       "item": [
          {
-            "duration_sec": 5218063573410113424,
+            "duration_sec": "Eos atque illo voluptas et.",
             "intake_form_answers": {
                "answer": [
                   {
-                     "id": "Nesciunt eum sit voluptate vel unde ipsam.",
+                     "id": "Consequuntur incidunt maiores.",
                      "response": [
-                        "Quas harum ad qui excepturi sint.",
-                        "Dignissimos et.",
-                        "Quasi est placeat vel doloribus facilis.",
-                        "Ut est vel laborum."
+                        "Dicta ipsam.",
+                        "Et dolorem sit maiores.",
+                        "Exercitationem in voluptatem aspernatur iure."
                      ]
                   },
                   {
-                     "id": "Nesciunt eum sit voluptate vel unde ipsam.",
+                     "id": "Consequuntur incidunt maiores.",
                      "response": [
-                        "Quas harum ad qui excepturi sint.",
-                        "Dignissimos et.",
-                        "Quasi est placeat vel doloribus facilis.",
-                        "Ut est vel laborum."
+                        "Dicta ipsam.",
+                        "Et dolorem sit maiores.",
+                        "Exercitationem in voluptatem aspernatur iure."
                      ]
                   }
                ]
             },
             "price": {
-               "currency_code": "Sit quae.",
-               "price_micros": 6250006249689697416,
-               "pricing_option_tag": "Perferendis iusto ea quae est quam."
+               "currency_code": "Dolore omnis est architecto.",
+               "price_micros": 941384116037444211,
+               "pricing_option_tag": "Est quis."
             },
-            "service_id": "Quo at harum cupiditate officia.",
-            "start_sec": 2726691727586715899,
-            "status": "BOOKING_STATUS_UNSPECIFIED",
+            "service_id": "Aut rem ut.",
+            "start_sec": "Sed neque omnis quia praesentium dolor.",
+            "status": "CONFIRMED",
             "tickets": [
                {
-                  "count": 1295690387,
-                  "ticket_id": "Corporis ex quis reprehenderit molestiae fugit."
+                  "count": 2034419787,
+                  "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
                },
                {
-                  "count": 1295690387,
-                  "ticket_id": "Corporis ex quis reprehenderit molestiae fugit."
-               },
-               {
-                  "count": 1295690387,
-                  "ticket_id": "Corporis ex quis reprehenderit molestiae fugit."
+                  "count": 2034419787,
+                  "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
                }
             ],
-            "warning_reason": "PRICE_INCREASE"
+            "warning_reason": "UNSPECIFIED_WARNING_REASON"
          },
          {
-            "duration_sec": 5218063573410113424,
+            "duration_sec": "Eos atque illo voluptas et.",
             "intake_form_answers": {
                "answer": [
                   {
-                     "id": "Nesciunt eum sit voluptate vel unde ipsam.",
+                     "id": "Consequuntur incidunt maiores.",
                      "response": [
-                        "Quas harum ad qui excepturi sint.",
-                        "Dignissimos et.",
-                        "Quasi est placeat vel doloribus facilis.",
-                        "Ut est vel laborum."
+                        "Dicta ipsam.",
+                        "Et dolorem sit maiores.",
+                        "Exercitationem in voluptatem aspernatur iure."
                      ]
                   },
                   {
-                     "id": "Nesciunt eum sit voluptate vel unde ipsam.",
+                     "id": "Consequuntur incidunt maiores.",
                      "response": [
-                        "Quas harum ad qui excepturi sint.",
-                        "Dignissimos et.",
-                        "Quasi est placeat vel doloribus facilis.",
-                        "Ut est vel laborum."
+                        "Dicta ipsam.",
+                        "Et dolorem sit maiores.",
+                        "Exercitationem in voluptatem aspernatur iure."
                      ]
                   }
                ]
             },
             "price": {
-               "currency_code": "Sit quae.",
-               "price_micros": 6250006249689697416,
-               "pricing_option_tag": "Perferendis iusto ea quae est quam."
+               "currency_code": "Dolore omnis est architecto.",
+               "price_micros": 941384116037444211,
+               "pricing_option_tag": "Est quis."
             },
-            "service_id": "Quo at harum cupiditate officia.",
-            "start_sec": 2726691727586715899,
-            "status": "BOOKING_STATUS_UNSPECIFIED",
+            "service_id": "Aut rem ut.",
+            "start_sec": "Sed neque omnis quia praesentium dolor.",
+            "status": "CONFIRMED",
             "tickets": [
                {
-                  "count": 1295690387,
-                  "ticket_id": "Corporis ex quis reprehenderit molestiae fugit."
+                  "count": 2034419787,
+                  "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
                },
                {
-                  "count": 1295690387,
-                  "ticket_id": "Corporis ex quis reprehenderit molestiae fugit."
-               },
-               {
-                  "count": 1295690387,
-                  "ticket_id": "Corporis ex quis reprehenderit molestiae fugit."
+                  "count": 2034419787,
+                  "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
                }
             ],
-            "warning_reason": "PRICE_INCREASE"
+            "warning_reason": "UNSPECIFIED_WARNING_REASON"
+         },
+         {
+            "duration_sec": "Eos atque illo voluptas et.",
+            "intake_form_answers": {
+               "answer": [
+                  {
+                     "id": "Consequuntur incidunt maiores.",
+                     "response": [
+                        "Dicta ipsam.",
+                        "Et dolorem sit maiores.",
+                        "Exercitationem in voluptatem aspernatur iure."
+                     ]
+                  },
+                  {
+                     "id": "Consequuntur incidunt maiores.",
+                     "response": [
+                        "Dicta ipsam.",
+                        "Et dolorem sit maiores.",
+                        "Exercitationem in voluptatem aspernatur iure."
+                     ]
+                  }
+               ]
+            },
+            "price": {
+               "currency_code": "Dolore omnis est architecto.",
+               "price_micros": 941384116037444211,
+               "pricing_option_tag": "Est quis."
+            },
+            "service_id": "Aut rem ut.",
+            "start_sec": "Sed neque omnis quia praesentium dolor.",
+            "status": "CONFIRMED",
+            "tickets": [
+               {
+                  "count": 2034419787,
+                  "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
+               },
+               {
+                  "count": 2034419787,
+                  "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
+               }
+            ],
+            "warning_reason": "UNSPECIFIED_WARNING_REASON"
+         },
+         {
+            "duration_sec": "Eos atque illo voluptas et.",
+            "intake_form_answers": {
+               "answer": [
+                  {
+                     "id": "Consequuntur incidunt maiores.",
+                     "response": [
+                        "Dicta ipsam.",
+                        "Et dolorem sit maiores.",
+                        "Exercitationem in voluptatem aspernatur iure."
+                     ]
+                  },
+                  {
+                     "id": "Consequuntur incidunt maiores.",
+                     "response": [
+                        "Dicta ipsam.",
+                        "Et dolorem sit maiores.",
+                        "Exercitationem in voluptatem aspernatur iure."
+                     ]
+                  }
+               ]
+            },
+            "price": {
+               "currency_code": "Dolore omnis est architecto.",
+               "price_micros": 941384116037444211,
+               "pricing_option_tag": "Est quis."
+            },
+            "service_id": "Aut rem ut.",
+            "start_sec": "Sed neque omnis quia praesentium dolor.",
+            "status": "CONFIRMED",
+            "tickets": [
+               {
+                  "count": 2034419787,
+                  "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
+               },
+               {
+                  "count": 2034419787,
+                  "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
+               }
+            ],
+            "warning_reason": "UNSPECIFIED_WARNING_REASON"
          }
       ],
-      "merchant_id": "Voluptatibus omnis expedita autem ea."
-   }' --username "Autem pariatur et." --password "Voluptatem nostrum et eum."` + "\n" +
+      "merchant_id": "Commodi vel placeat est debitis odit dicta."
+   }' --username "Minima architecto vel eaque tempore porro porro." --password "Et impedit necessitatibus velit consequuntur."` + "\n" +
 		os.Args[0] + ` waitlist batch-get-wait-estimates --body '{
-      "merchant_id": "Ipsum praesentium tenetur veniam molestiae sed distinctio.",
+      "merchant_id": "Sint ea officia labore.",
       "party_size": [
-         1195391964,
-         1522198561,
-         1006042009,
-         2009461095
+         1456607358,
+         1218899136,
+         1607272068
       ],
-      "service_id": "Nulla dicta repellendus labore."
-   }' --username "Dolor quaerat quae." --password "Iusto quas dolor."` + "\n" +
+      "service_id": "Ut eaque aut qui in incidunt vel."
+   }' --username "Impedit et repellat." --password "In sed ut quo."` + "\n" +
 		""
 }
 
@@ -517,7 +576,7 @@ HealthCheck implements health_check.
     -password STRING: 
 
 Example:
-    `+os.Args[0]+` common health-check --username "Ipsa voluptatem." --password "Nisi doloribus ut qui pariatur."
+    `+os.Args[0]+` common health-check --username "Dolores omnis et labore ea." --password "Atque perspiciatis harum fugiat delectus explicabo."
 `, os.Args[0])
 }
 
@@ -549,58 +608,46 @@ BatchAvailabilityLookup implements batch_availability_lookup.
 
 Example:
     `+os.Args[0]+` booking batch-availability-lookup --body '{
-      "merchant_id": "Ipsa incidunt non tempora deleniti ipsa et.",
+      "merchant_id": "Quia voluptates porro nulla praesentium.",
       "slot_time": [
          {
-            "availability_tag": "Accusamus aspernatur labore at quo.",
-            "confirmation_mode": "CONFIRMATION_MODE_UNSPECIFIED",
-            "duration_sec": 8435747200459079087,
+            "availability_tag": "Doloribus aliquam rerum sed ea et.",
+            "confirmation_mode": "CONFIRMATION_MODE_ASYNCHRONOUS",
+            "duration_sec": "Sit aspernatur molestiae.",
             "resource_ids": {
-               "party_size": 1294063121,
-               "room_id": "Quia et ea rerum est expedita.",
-               "staff_id": "Adipisci et impedit velit dignissimos autem fuga."
+               "party_size": 32244509,
+               "room_id": "Quidem omnis consectetur voluptatibus.",
+               "staff_id": "Provident qui omnis reiciendis qui."
             },
-            "service_id": "Ex soluta aut veritatis soluta quod.",
-            "start_sec": 5917608252949059848
+            "service_id": "Omnis modi error veritatis quia.",
+            "start_sec": "Fugiat ut porro ullam qui."
          },
          {
-            "availability_tag": "Accusamus aspernatur labore at quo.",
-            "confirmation_mode": "CONFIRMATION_MODE_UNSPECIFIED",
-            "duration_sec": 8435747200459079087,
+            "availability_tag": "Doloribus aliquam rerum sed ea et.",
+            "confirmation_mode": "CONFIRMATION_MODE_ASYNCHRONOUS",
+            "duration_sec": "Sit aspernatur molestiae.",
             "resource_ids": {
-               "party_size": 1294063121,
-               "room_id": "Quia et ea rerum est expedita.",
-               "staff_id": "Adipisci et impedit velit dignissimos autem fuga."
+               "party_size": 32244509,
+               "room_id": "Quidem omnis consectetur voluptatibus.",
+               "staff_id": "Provident qui omnis reiciendis qui."
             },
-            "service_id": "Ex soluta aut veritatis soluta quod.",
-            "start_sec": 5917608252949059848
+            "service_id": "Omnis modi error veritatis quia.",
+            "start_sec": "Fugiat ut porro ullam qui."
          },
          {
-            "availability_tag": "Accusamus aspernatur labore at quo.",
-            "confirmation_mode": "CONFIRMATION_MODE_UNSPECIFIED",
-            "duration_sec": 8435747200459079087,
+            "availability_tag": "Doloribus aliquam rerum sed ea et.",
+            "confirmation_mode": "CONFIRMATION_MODE_ASYNCHRONOUS",
+            "duration_sec": "Sit aspernatur molestiae.",
             "resource_ids": {
-               "party_size": 1294063121,
-               "room_id": "Quia et ea rerum est expedita.",
-               "staff_id": "Adipisci et impedit velit dignissimos autem fuga."
+               "party_size": 32244509,
+               "room_id": "Quidem omnis consectetur voluptatibus.",
+               "staff_id": "Provident qui omnis reiciendis qui."
             },
-            "service_id": "Ex soluta aut veritatis soluta quod.",
-            "start_sec": 5917608252949059848
-         },
-         {
-            "availability_tag": "Accusamus aspernatur labore at quo.",
-            "confirmation_mode": "CONFIRMATION_MODE_UNSPECIFIED",
-            "duration_sec": 8435747200459079087,
-            "resource_ids": {
-               "party_size": 1294063121,
-               "room_id": "Quia et ea rerum est expedita.",
-               "staff_id": "Adipisci et impedit velit dignissimos autem fuga."
-            },
-            "service_id": "Ex soluta aut veritatis soluta quod.",
-            "start_sec": 5917608252949059848
+            "service_id": "Omnis modi error veritatis quia.",
+            "start_sec": "Fugiat ut porro ullam qui."
          }
       ]
-   }' --username "Doloribus ut." --password "Esse ex nisi quasi."
+   }' --username "Enim ut optio vero corporis quam veniam." --password "Nesciunt occaecati maxime perspiciatis."
 `, os.Args[0])
 }
 
@@ -615,19 +662,19 @@ CheckAvailability implements check_availability.
 Example:
     `+os.Args[0]+` booking check-availability --body '{
       "slot": {
-         "availability_tag": "Ratione fugiat.",
+         "availability_tag": "Aliquid reiciendis expedita consectetur at nulla.",
          "confirmation_mode": "CONFIRMATION_MODE_SYNCHRONOUS",
-         "duration_sec": 8817681372972889417,
-         "merchant_id": "Et quia voluptates.",
+         "duration_sec": "Rerum rerum excepturi ea accusamus.",
+         "merchant_id": "Sequi esse.",
          "resources": {
-            "party_size": 1294063121,
-            "room_id": "Quia et ea rerum est expedita.",
-            "staff_id": "Adipisci et impedit velit dignissimos autem fuga."
+            "party_size": 32244509,
+            "room_id": "Quidem omnis consectetur voluptatibus.",
+            "staff_id": "Provident qui omnis reiciendis qui."
          },
-         "service_id": "Nulla praesentium et non omnis modi.",
-         "start_sec": 2392541444029039475
+         "service_id": "Officia nihil at mollitia.",
+         "start_sec": "Possimus in nostrum quae."
       }
-   }' --username "Ullam qui unde sit aspernatur molestiae." --password "Doloribus aliquam rerum sed ea et."
+   }' --username "Tenetur exercitationem non." --password "Aut sit quae consequatur perferendis iusto ea."
 `, os.Args[0])
 }
 
@@ -641,133 +688,127 @@ CreateBooking implements create_booking.
 
 Example:
     `+os.Args[0]+` booking create-booking --body '{
-      "additional_request": "Est officiis sunt praesentium molestias excepturi.",
-      "deal_id": "Atque adipisci quibusdam.",
-      "idempotency_token": "Suscipit recusandae quasi porro maiores laborum.",
+      "additional_request": "Quia asperiores quos rerum.",
+      "deal_id": "Nemo a quidem ut consequatur.",
+      "idempotency_token": "Natus recusandae delectus pariatur.",
       "lease_ref": {
-         "lease_id": "Sit dolores."
+         "lease_id": "Expedita eius sequi autem unde laudantium aspernatur."
       },
-      "offer_id": "Voluptatem consectetur at repellat quo.",
+      "offer_id": "Assumenda qui aut quia necessitatibus sit.",
       "payment_information": {
          "deposit": {
             "deposit": {
-               "currency_code": "Sit quae.",
-               "price_micros": 6250006249689697416,
-               "pricing_option_tag": "Perferendis iusto ea quae est quam."
+               "currency_code": "Dolore omnis est architecto.",
+               "price_micros": 941384116037444211,
+               "pricing_option_tag": "Est quis."
             },
-            "deposit_type": "FIXED_RATE_DEFAULT",
-            "min_advance_cancellation_sec": 2682111425714885120
+            "deposit_type": "PER_PERSON",
+            "min_advance_cancellation_sec": "Facilis sint velit."
          },
          "fees": {
-            "currency_code": "Sit quae.",
-            "price_micros": 6250006249689697416,
-            "pricing_option_tag": "Perferendis iusto ea quae est quam."
+            "currency_code": "Dolore omnis est architecto.",
+            "price_micros": 941384116037444211,
+            "pricing_option_tag": "Est quis."
          },
          "fees_and_taxes": {
-            "currency_code": "Sit quae.",
-            "price_micros": 6250006249689697416,
-            "pricing_option_tag": "Perferendis iusto ea quae est quam."
+            "currency_code": "Dolore omnis est architecto.",
+            "price_micros": 941384116037444211,
+            "pricing_option_tag": "Est quis."
          },
-         "fraud_signals": "Iusto amet pariatur.",
-         "md_merchant_data": "Saepe quia.",
+         "fraud_signals": "Et corrupti sed suscipit qui maiores maiores.",
+         "md_merchant_data": "Delectus reiciendis voluptatem odio quibusdam.",
          "no_show_fee": {
             "fee": {
-               "currency_code": "Sit quae.",
-               "price_micros": 6250006249689697416,
-               "pricing_option_tag": "Perferendis iusto ea quae est quam."
+               "currency_code": "Dolore omnis est architecto.",
+               "price_micros": 941384116037444211,
+               "pricing_option_tag": "Est quis."
             },
             "fee_type": "PER_PERSON"
          },
-         "pa_response": "Pariatur quia et.",
-         "payment_option_id": "Facere tempore provident impedit veniam incidunt suscipit.",
-         "payment_processed_by": "PROCESSED_BY_GOOGLE",
-         "payment_transaction_id": "Tenetur exercitationem non.",
-         "prepayment_status": "PREPAYMENT_PROVIDED",
+         "pa_response": "Delectus maiores.",
+         "payment_option_id": "Nobis facilis vel.",
+         "payment_processed_by": "PROCESSED_BY_PARTNER",
+         "payment_transaction_id": "Adipisci quibusdam.",
+         "prepayment_status": "PREPAYMENT_CREDITED",
          "price": {
-            "currency_code": "Sit quae.",
-            "price_micros": 6250006249689697416,
-            "pricing_option_tag": "Perferendis iusto ea quae est quam."
+            "currency_code": "Dolore omnis est architecto.",
+            "price_micros": 941384116037444211,
+            "pricing_option_tag": "Est quis."
          },
          "tax_amount": {
-            "currency_code": "Sit quae.",
-            "price_micros": 6250006249689697416,
-            "pricing_option_tag": "Perferendis iusto ea quae est quam."
+            "currency_code": "Dolore omnis est architecto.",
+            "price_micros": 941384116037444211,
+            "pricing_option_tag": "Est quis."
          },
-         "user_payment_option_id": "Sapiente saepe libero quaerat velit quam."
+         "user_payment_option_id": "Maxime officia voluptatem."
       },
       "payment_processing_parameters": {
-         "payment_method_token": "Sunt quod quos architecto iure quia quibusdam.",
-         "payment_processor": "Laboriosam est delectus quo quo.",
-         "processor": "PAYMENT_PROCESSOR_UNSPECIFIED",
+         "payment_method_token": "Et a quia odio.",
+         "payment_processor": "Animi unde nobis aliquid rem.",
+         "processor": "PROCESSOR_BRAINTREE",
          "tokenization_config": {
             "allowed_auth_methods": [
-               "PAN_ONLY",
-               "AUTH_METHOD_UNSPECIFIED",
+               "CRYPTOGRAM_3DS",
                "AUTH_METHOD_UNSPECIFIED"
             ],
             "billing_information_format": "BILLING_INFORMATION_FORMAT_UNSPECIFIED",
             "card_network_parameters": [
                {
-                  "acquirer_bin": "Sit molestiae sed quasi.",
-                  "acquirer_merchant_id": "Sed eum officia.",
-                  "card_network": "DISCOVER"
+                  "acquirer_bin": "Non eius commodi iure optio.",
+                  "acquirer_merchant_id": "Laboriosam expedita iusto qui sint minus rerum.",
+                  "card_network": "MASTERCARD"
                },
                {
-                  "acquirer_bin": "Sit molestiae sed quasi.",
-                  "acquirer_merchant_id": "Sed eum officia.",
-                  "card_network": "DISCOVER"
+                  "acquirer_bin": "Non eius commodi iure optio.",
+                  "acquirer_merchant_id": "Laboriosam expedita iusto qui sint minus rerum.",
+                  "card_network": "MASTERCARD"
                },
                {
-                  "acquirer_bin": "Sit molestiae sed quasi.",
-                  "acquirer_merchant_id": "Sed eum officia.",
-                  "card_network": "DISCOVER"
-               },
-               {
-                  "acquirer_bin": "Sit molestiae sed quasi.",
-                  "acquirer_merchant_id": "Sed eum officia.",
-                  "card_network": "DISCOVER"
+                  "acquirer_bin": "Non eius commodi iure optio.",
+                  "acquirer_merchant_id": "Laboriosam expedita iusto qui sint minus rerum.",
+                  "card_network": "MASTERCARD"
                }
             ],
-            "merchant_of_record_name": "Blanditiis molestias.",
-            "payment_country_code": "Qui eius expedita quo nihil.",
+            "merchant_of_record_name": "Voluptatem rerum ex.",
+            "payment_country_code": "Est et.",
             "tokenization_parameter": {
-               "Eaque aut.": "Excepturi quisquam necessitatibus dolorem.",
-               "Error perspiciatis.": "Inventore dolor ab omnis.",
-               "Sed exercitationem rem similique aut necessitatibus ullam.": "Eius sequi autem unde laudantium aspernatur."
+               "Aut quibusdam delectus assumenda.": "Ut deleniti minima.",
+               "Eaque qui a repudiandae.": "Facilis voluptatem dolorem.",
+               "Neque dolor.": "Enim architecto error odio a."
             }
          },
-         "unparsed_payment_method_token": "Possimus consequatur sequi asperiores quasi.",
-         "version": "Animi quidem veniam molestiae."
+         "unparsed_payment_method_token": "Modi iure.",
+         "version": "Reprehenderit ipsum expedita."
       },
       "slot": {
-         "availability_tag": "Ratione fugiat.",
+         "availability_tag": "Aliquid reiciendis expedita consectetur at nulla.",
          "confirmation_mode": "CONFIRMATION_MODE_SYNCHRONOUS",
-         "duration_sec": 8817681372972889417,
-         "merchant_id": "Et quia voluptates.",
+         "duration_sec": "Rerum rerum excepturi ea accusamus.",
+         "merchant_id": "Sequi esse.",
          "resources": {
-            "party_size": 1294063121,
-            "room_id": "Quia et ea rerum est expedita.",
-            "staff_id": "Adipisci et impedit velit dignissimos autem fuga."
+            "party_size": 32244509,
+            "room_id": "Quidem omnis consectetur voluptatibus.",
+            "staff_id": "Provident qui omnis reiciendis qui."
          },
-         "service_id": "Nulla praesentium et non omnis modi.",
-         "start_sec": 2392541444029039475
+         "service_id": "Officia nihil at mollitia.",
+         "start_sec": "Possimus in nostrum quae."
       },
       "user_information": {
          "address": {
-            "country": "Vel et vel.",
-            "locality": "Illum optio.",
-            "postal_code": "Porro molestiae quam dignissimos illum quia praesentium.",
-            "region": "Praesentium nemo quia molestias.",
-            "street_address": "Esse necessitatibus officia nihil at mollitia nobis."
+            "country": "Inventore dolor ab omnis.",
+            "locality": "Qui blanditiis molestias cum qui eius.",
+            "postal_code": "Sed quasi asperiores sed eum officia.",
+            "region": "Quo nihil quaerat et totam sit.",
+            "street_address": "Quia consectetur veritatis vel suscipit recusandae quasi."
          },
-         "email": "Rerum excepturi ea accusamus illo.",
-         "family_name": "Repudiandae enim voluptas quia sed tenetur possimus.",
-         "given_name": "Debitis hic id qui.",
-         "language_code": "Reiciendis expedita consectetur at nulla.",
-         "telephone": "In nostrum quae sint.",
-         "user_id": "Et voluptatibus eius soluta."
+         "email": "Officiis sunt praesentium molestias excepturi.",
+         "family_name": "Error perspiciatis.",
+         "given_name": "Excepturi quisquam necessitatibus dolorem.",
+         "language_code": "Voluptatem consectetur at repellat quo.",
+         "telephone": "Maiores laborum porro.",
+         "user_id": "Eaque aut."
       }
-   }' --username "Voluptatem dolore omnis est architecto." --password "Est quis."
+   }' --username "Et at autem sit." --password "Reiciendis accusamus possimus eaque necessitatibus odio ut."
 `, os.Args[0])
 }
 
@@ -782,93 +823,93 @@ UpdateBooking implements update_booking.
 Example:
     `+os.Args[0]+` booking update-booking --body '{
       "booking": {
-         "booking_id": "Id dolorem nobis.",
+         "booking_id": "Debitis nulla tenetur ut ut.",
          "offer_info": {
-            "offer_id": "Quaerat dolor et et et voluptatem inventore."
+            "offer_id": "Cum voluptatibus omnis expedita."
          },
          "payment_information": {
             "deposit": {
                "deposit": {
-                  "currency_code": "Sit quae.",
-                  "price_micros": 6250006249689697416,
-                  "pricing_option_tag": "Perferendis iusto ea quae est quam."
+                  "currency_code": "Dolore omnis est architecto.",
+                  "price_micros": 941384116037444211,
+                  "pricing_option_tag": "Est quis."
                },
-               "deposit_type": "FIXED_RATE_DEFAULT",
-               "min_advance_cancellation_sec": 2682111425714885120
+               "deposit_type": "PER_PERSON",
+               "min_advance_cancellation_sec": "Facilis sint velit."
             },
             "fees": {
-               "currency_code": "Sit quae.",
-               "price_micros": 6250006249689697416,
-               "pricing_option_tag": "Perferendis iusto ea quae est quam."
+               "currency_code": "Dolore omnis est architecto.",
+               "price_micros": 941384116037444211,
+               "pricing_option_tag": "Est quis."
             },
             "fees_and_taxes": {
-               "currency_code": "Sit quae.",
-               "price_micros": 6250006249689697416,
-               "pricing_option_tag": "Perferendis iusto ea quae est quam."
+               "currency_code": "Dolore omnis est architecto.",
+               "price_micros": 941384116037444211,
+               "pricing_option_tag": "Est quis."
             },
-            "fraud_signals": "Iusto amet pariatur.",
-            "md_merchant_data": "Saepe quia.",
+            "fraud_signals": "Et corrupti sed suscipit qui maiores maiores.",
+            "md_merchant_data": "Delectus reiciendis voluptatem odio quibusdam.",
             "no_show_fee": {
                "fee": {
-                  "currency_code": "Sit quae.",
-                  "price_micros": 6250006249689697416,
-                  "pricing_option_tag": "Perferendis iusto ea quae est quam."
+                  "currency_code": "Dolore omnis est architecto.",
+                  "price_micros": 941384116037444211,
+                  "pricing_option_tag": "Est quis."
                },
                "fee_type": "PER_PERSON"
             },
-            "pa_response": "Pariatur quia et.",
-            "payment_option_id": "Facere tempore provident impedit veniam incidunt suscipit.",
-            "payment_processed_by": "PROCESSED_BY_GOOGLE",
-            "payment_transaction_id": "Tenetur exercitationem non.",
-            "prepayment_status": "PREPAYMENT_PROVIDED",
+            "pa_response": "Delectus maiores.",
+            "payment_option_id": "Nobis facilis vel.",
+            "payment_processed_by": "PROCESSED_BY_PARTNER",
+            "payment_transaction_id": "Adipisci quibusdam.",
+            "prepayment_status": "PREPAYMENT_CREDITED",
             "price": {
-               "currency_code": "Sit quae.",
-               "price_micros": 6250006249689697416,
-               "pricing_option_tag": "Perferendis iusto ea quae est quam."
+               "currency_code": "Dolore omnis est architecto.",
+               "price_micros": 941384116037444211,
+               "pricing_option_tag": "Est quis."
             },
             "tax_amount": {
-               "currency_code": "Sit quae.",
-               "price_micros": 6250006249689697416,
-               "pricing_option_tag": "Perferendis iusto ea quae est quam."
+               "currency_code": "Dolore omnis est architecto.",
+               "price_micros": 941384116037444211,
+               "pricing_option_tag": "Est quis."
             },
-            "user_payment_option_id": "Sapiente saepe libero quaerat velit quam."
+            "user_payment_option_id": "Maxime officia voluptatem."
          },
          "slot": {
-            "availability_tag": "Ratione fugiat.",
+            "availability_tag": "Aliquid reiciendis expedita consectetur at nulla.",
             "confirmation_mode": "CONFIRMATION_MODE_SYNCHRONOUS",
-            "duration_sec": 8817681372972889417,
-            "merchant_id": "Et quia voluptates.",
+            "duration_sec": "Rerum rerum excepturi ea accusamus.",
+            "merchant_id": "Sequi esse.",
             "resources": {
-               "party_size": 1294063121,
-               "room_id": "Quia et ea rerum est expedita.",
-               "staff_id": "Adipisci et impedit velit dignissimos autem fuga."
+               "party_size": 32244509,
+               "room_id": "Quidem omnis consectetur voluptatibus.",
+               "staff_id": "Provident qui omnis reiciendis qui."
             },
-            "service_id": "Nulla praesentium et non omnis modi.",
-            "start_sec": 2392541444029039475
+            "service_id": "Officia nihil at mollitia.",
+            "start_sec": "Possimus in nostrum quae."
          },
-         "status": "PENDING_MERCHANT_CONFIRMATION",
+         "status": "CONFIRMED",
          "user_information": {
             "address": {
-               "country": "Vel et vel.",
-               "locality": "Illum optio.",
-               "postal_code": "Porro molestiae quam dignissimos illum quia praesentium.",
-               "region": "Praesentium nemo quia molestias.",
-               "street_address": "Esse necessitatibus officia nihil at mollitia nobis."
+               "country": "Inventore dolor ab omnis.",
+               "locality": "Qui blanditiis molestias cum qui eius.",
+               "postal_code": "Sed quasi asperiores sed eum officia.",
+               "region": "Quo nihil quaerat et totam sit.",
+               "street_address": "Quia consectetur veritatis vel suscipit recusandae quasi."
             },
-            "email": "Rerum excepturi ea accusamus illo.",
-            "family_name": "Repudiandae enim voluptas quia sed tenetur possimus.",
-            "given_name": "Debitis hic id qui.",
-            "language_code": "Reiciendis expedita consectetur at nulla.",
-            "telephone": "In nostrum quae sint.",
-            "user_id": "Et voluptatibus eius soluta."
+            "email": "Officiis sunt praesentium molestias excepturi.",
+            "family_name": "Error perspiciatis.",
+            "given_name": "Excepturi quisquam necessitatibus dolorem.",
+            "language_code": "Voluptatem consectetur at repellat quo.",
+            "telephone": "Maiores laborum porro.",
+            "user_id": "Eaque aut."
          },
          "virtual_session_info": {
-            "meeting_id": "Iure sunt quo dicta ducimus sunt.",
-            "password": "Repudiandae sunt soluta praesentium laborum soluta.",
-            "session_url": "Id qui inventore rerum."
+            "meeting_id": "Voluptatem dolore repudiandae qui et ullam necessitatibus.",
+            "password": "Eum mollitia eveniet.",
+            "session_url": "Iste voluptatum."
          }
       }
-   }' --username "Sint voluptatem laudantium molestias deleniti nemo." --password "Officia maiores quia aut."
+   }' --username "Ea fuga." --password "Quo at harum cupiditate officia."
 `, os.Args[0])
 }
 
@@ -882,8 +923,8 @@ GetBookingStatus implements get_booking_status.
 
 Example:
     `+os.Args[0]+` booking get-booking-status --body '{
-      "booking_id": "Omnis distinctio."
-   }' --username "Temporibus et architecto eaque enim." --password "Officiis laboriosam impedit minus et ducimus pariatur."
+      "booking_id": "Est placeat vel doloribus facilis necessitatibus ut."
+   }' --username "Vel laborum." --password "Temporibus nisi."
 `, os.Args[0])
 }
 
@@ -897,8 +938,8 @@ ListBookings implements list_bookings.
 
 Example:
     `+os.Args[0]+` booking list-bookings --body '{
-      "user_id": "Quia voluptatem sit qui iusto."
-   }' --username "Nisi et." --password "Debitis voluptatem dolores ea aut quis ipsam."
+      "user_id": "Tenetur at distinctio magnam mollitia sit."
+   }' --username "Doloribus quia provident." --password "Deleniti nobis impedit numquam molestiae facere ut."
 `, os.Args[0])
 }
 
@@ -927,107 +968,179 @@ CheckOrderFulfillability implements check_order_fulfillability.
 
 Example:
     `+os.Args[0]+` order check-order-fulfillability --body '{
-      "cart_id": "Nisi odit alias et at magni.",
+      "cart_id": "Molestias est minima eum porro sunt earum.",
       "item": [
          {
-            "duration_sec": 5218063573410113424,
+            "duration_sec": "Eos atque illo voluptas et.",
             "intake_form_answers": {
                "answer": [
                   {
-                     "id": "Nesciunt eum sit voluptate vel unde ipsam.",
+                     "id": "Consequuntur incidunt maiores.",
                      "response": [
-                        "Quas harum ad qui excepturi sint.",
-                        "Dignissimos et.",
-                        "Quasi est placeat vel doloribus facilis.",
-                        "Ut est vel laborum."
+                        "Dicta ipsam.",
+                        "Et dolorem sit maiores.",
+                        "Exercitationem in voluptatem aspernatur iure."
                      ]
                   },
                   {
-                     "id": "Nesciunt eum sit voluptate vel unde ipsam.",
+                     "id": "Consequuntur incidunt maiores.",
                      "response": [
-                        "Quas harum ad qui excepturi sint.",
-                        "Dignissimos et.",
-                        "Quasi est placeat vel doloribus facilis.",
-                        "Ut est vel laborum."
+                        "Dicta ipsam.",
+                        "Et dolorem sit maiores.",
+                        "Exercitationem in voluptatem aspernatur iure."
                      ]
                   }
                ]
             },
             "price": {
-               "currency_code": "Sit quae.",
-               "price_micros": 6250006249689697416,
-               "pricing_option_tag": "Perferendis iusto ea quae est quam."
+               "currency_code": "Dolore omnis est architecto.",
+               "price_micros": 941384116037444211,
+               "pricing_option_tag": "Est quis."
             },
-            "service_id": "Quo at harum cupiditate officia.",
-            "start_sec": 2726691727586715899,
-            "status": "BOOKING_STATUS_UNSPECIFIED",
+            "service_id": "Aut rem ut.",
+            "start_sec": "Sed neque omnis quia praesentium dolor.",
+            "status": "CONFIRMED",
             "tickets": [
                {
-                  "count": 1295690387,
-                  "ticket_id": "Corporis ex quis reprehenderit molestiae fugit."
+                  "count": 2034419787,
+                  "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
                },
                {
-                  "count": 1295690387,
-                  "ticket_id": "Corporis ex quis reprehenderit molestiae fugit."
-               },
-               {
-                  "count": 1295690387,
-                  "ticket_id": "Corporis ex quis reprehenderit molestiae fugit."
+                  "count": 2034419787,
+                  "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
                }
             ],
-            "warning_reason": "PRICE_INCREASE"
+            "warning_reason": "UNSPECIFIED_WARNING_REASON"
          },
          {
-            "duration_sec": 5218063573410113424,
+            "duration_sec": "Eos atque illo voluptas et.",
             "intake_form_answers": {
                "answer": [
                   {
-                     "id": "Nesciunt eum sit voluptate vel unde ipsam.",
+                     "id": "Consequuntur incidunt maiores.",
                      "response": [
-                        "Quas harum ad qui excepturi sint.",
-                        "Dignissimos et.",
-                        "Quasi est placeat vel doloribus facilis.",
-                        "Ut est vel laborum."
+                        "Dicta ipsam.",
+                        "Et dolorem sit maiores.",
+                        "Exercitationem in voluptatem aspernatur iure."
                      ]
                   },
                   {
-                     "id": "Nesciunt eum sit voluptate vel unde ipsam.",
+                     "id": "Consequuntur incidunt maiores.",
                      "response": [
-                        "Quas harum ad qui excepturi sint.",
-                        "Dignissimos et.",
-                        "Quasi est placeat vel doloribus facilis.",
-                        "Ut est vel laborum."
+                        "Dicta ipsam.",
+                        "Et dolorem sit maiores.",
+                        "Exercitationem in voluptatem aspernatur iure."
                      ]
                   }
                ]
             },
             "price": {
-               "currency_code": "Sit quae.",
-               "price_micros": 6250006249689697416,
-               "pricing_option_tag": "Perferendis iusto ea quae est quam."
+               "currency_code": "Dolore omnis est architecto.",
+               "price_micros": 941384116037444211,
+               "pricing_option_tag": "Est quis."
             },
-            "service_id": "Quo at harum cupiditate officia.",
-            "start_sec": 2726691727586715899,
-            "status": "BOOKING_STATUS_UNSPECIFIED",
+            "service_id": "Aut rem ut.",
+            "start_sec": "Sed neque omnis quia praesentium dolor.",
+            "status": "CONFIRMED",
             "tickets": [
                {
-                  "count": 1295690387,
-                  "ticket_id": "Corporis ex quis reprehenderit molestiae fugit."
+                  "count": 2034419787,
+                  "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
                },
                {
-                  "count": 1295690387,
-                  "ticket_id": "Corporis ex quis reprehenderit molestiae fugit."
-               },
-               {
-                  "count": 1295690387,
-                  "ticket_id": "Corporis ex quis reprehenderit molestiae fugit."
+                  "count": 2034419787,
+                  "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
                }
             ],
-            "warning_reason": "PRICE_INCREASE"
+            "warning_reason": "UNSPECIFIED_WARNING_REASON"
+         },
+         {
+            "duration_sec": "Eos atque illo voluptas et.",
+            "intake_form_answers": {
+               "answer": [
+                  {
+                     "id": "Consequuntur incidunt maiores.",
+                     "response": [
+                        "Dicta ipsam.",
+                        "Et dolorem sit maiores.",
+                        "Exercitationem in voluptatem aspernatur iure."
+                     ]
+                  },
+                  {
+                     "id": "Consequuntur incidunt maiores.",
+                     "response": [
+                        "Dicta ipsam.",
+                        "Et dolorem sit maiores.",
+                        "Exercitationem in voluptatem aspernatur iure."
+                     ]
+                  }
+               ]
+            },
+            "price": {
+               "currency_code": "Dolore omnis est architecto.",
+               "price_micros": 941384116037444211,
+               "pricing_option_tag": "Est quis."
+            },
+            "service_id": "Aut rem ut.",
+            "start_sec": "Sed neque omnis quia praesentium dolor.",
+            "status": "CONFIRMED",
+            "tickets": [
+               {
+                  "count": 2034419787,
+                  "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
+               },
+               {
+                  "count": 2034419787,
+                  "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
+               }
+            ],
+            "warning_reason": "UNSPECIFIED_WARNING_REASON"
+         },
+         {
+            "duration_sec": "Eos atque illo voluptas et.",
+            "intake_form_answers": {
+               "answer": [
+                  {
+                     "id": "Consequuntur incidunt maiores.",
+                     "response": [
+                        "Dicta ipsam.",
+                        "Et dolorem sit maiores.",
+                        "Exercitationem in voluptatem aspernatur iure."
+                     ]
+                  },
+                  {
+                     "id": "Consequuntur incidunt maiores.",
+                     "response": [
+                        "Dicta ipsam.",
+                        "Et dolorem sit maiores.",
+                        "Exercitationem in voluptatem aspernatur iure."
+                     ]
+                  }
+               ]
+            },
+            "price": {
+               "currency_code": "Dolore omnis est architecto.",
+               "price_micros": 941384116037444211,
+               "pricing_option_tag": "Est quis."
+            },
+            "service_id": "Aut rem ut.",
+            "start_sec": "Sed neque omnis quia praesentium dolor.",
+            "status": "CONFIRMED",
+            "tickets": [
+               {
+                  "count": 2034419787,
+                  "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
+               },
+               {
+                  "count": 2034419787,
+                  "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
+               }
+            ],
+            "warning_reason": "UNSPECIFIED_WARNING_REASON"
          }
       ],
-      "merchant_id": "Voluptatibus omnis expedita autem ea."
-   }' --username "Autem pariatur et." --password "Voluptatem nostrum et eum."
+      "merchant_id": "Commodi vel placeat est debitis odit dicta."
+   }' --username "Minima architecto vel eaque tempore porro porro." --password "Et impedit necessitatibus velit consequuntur."
 `, os.Args[0])
 }
 
@@ -1041,216 +1154,198 @@ CreateOrder implements create_order.
 
 Example:
     `+os.Args[0]+` order create-order --body '{
-      "idempotency_token": "Exercitationem et voluptas velit voluptas.",
+      "idempotency_token": "Dolorem facere et.",
       "order": {
          "item": [
             {
-               "duration_sec": 5218063573410113424,
+               "duration_sec": "Eos atque illo voluptas et.",
                "intake_form_answers": {
                   "answer": [
                      {
-                        "id": "Nesciunt eum sit voluptate vel unde ipsam.",
+                        "id": "Consequuntur incidunt maiores.",
                         "response": [
-                           "Quas harum ad qui excepturi sint.",
-                           "Dignissimos et.",
-                           "Quasi est placeat vel doloribus facilis.",
-                           "Ut est vel laborum."
+                           "Dicta ipsam.",
+                           "Et dolorem sit maiores.",
+                           "Exercitationem in voluptatem aspernatur iure."
                         ]
                      },
                      {
-                        "id": "Nesciunt eum sit voluptate vel unde ipsam.",
+                        "id": "Consequuntur incidunt maiores.",
                         "response": [
-                           "Quas harum ad qui excepturi sint.",
-                           "Dignissimos et.",
-                           "Quasi est placeat vel doloribus facilis.",
-                           "Ut est vel laborum."
+                           "Dicta ipsam.",
+                           "Et dolorem sit maiores.",
+                           "Exercitationem in voluptatem aspernatur iure."
                         ]
                      }
                   ]
                },
                "price": {
-                  "currency_code": "Sit quae.",
-                  "price_micros": 6250006249689697416,
-                  "pricing_option_tag": "Perferendis iusto ea quae est quam."
+                  "currency_code": "Dolore omnis est architecto.",
+                  "price_micros": 941384116037444211,
+                  "pricing_option_tag": "Est quis."
                },
-               "service_id": "Quo at harum cupiditate officia.",
-               "start_sec": 2726691727586715899,
-               "status": "BOOKING_STATUS_UNSPECIFIED",
+               "service_id": "Aut rem ut.",
+               "start_sec": "Sed neque omnis quia praesentium dolor.",
+               "status": "CONFIRMED",
                "tickets": [
                   {
-                     "count": 1295690387,
-                     "ticket_id": "Corporis ex quis reprehenderit molestiae fugit."
+                     "count": 2034419787,
+                     "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
                   },
                   {
-                     "count": 1295690387,
-                     "ticket_id": "Corporis ex quis reprehenderit molestiae fugit."
-                  },
-                  {
-                     "count": 1295690387,
-                     "ticket_id": "Corporis ex quis reprehenderit molestiae fugit."
+                     "count": 2034419787,
+                     "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
                   }
                ],
-               "warning_reason": "PRICE_INCREASE"
+               "warning_reason": "UNSPECIFIED_WARNING_REASON"
             },
             {
-               "duration_sec": 5218063573410113424,
+               "duration_sec": "Eos atque illo voluptas et.",
                "intake_form_answers": {
                   "answer": [
                      {
-                        "id": "Nesciunt eum sit voluptate vel unde ipsam.",
+                        "id": "Consequuntur incidunt maiores.",
                         "response": [
-                           "Quas harum ad qui excepturi sint.",
-                           "Dignissimos et.",
-                           "Quasi est placeat vel doloribus facilis.",
-                           "Ut est vel laborum."
+                           "Dicta ipsam.",
+                           "Et dolorem sit maiores.",
+                           "Exercitationem in voluptatem aspernatur iure."
                         ]
                      },
                      {
-                        "id": "Nesciunt eum sit voluptate vel unde ipsam.",
+                        "id": "Consequuntur incidunt maiores.",
                         "response": [
-                           "Quas harum ad qui excepturi sint.",
-                           "Dignissimos et.",
-                           "Quasi est placeat vel doloribus facilis.",
-                           "Ut est vel laborum."
+                           "Dicta ipsam.",
+                           "Et dolorem sit maiores.",
+                           "Exercitationem in voluptatem aspernatur iure."
                         ]
                      }
                   ]
                },
                "price": {
-                  "currency_code": "Sit quae.",
-                  "price_micros": 6250006249689697416,
-                  "pricing_option_tag": "Perferendis iusto ea quae est quam."
+                  "currency_code": "Dolore omnis est architecto.",
+                  "price_micros": 941384116037444211,
+                  "pricing_option_tag": "Est quis."
                },
-               "service_id": "Quo at harum cupiditate officia.",
-               "start_sec": 2726691727586715899,
-               "status": "BOOKING_STATUS_UNSPECIFIED",
+               "service_id": "Aut rem ut.",
+               "start_sec": "Sed neque omnis quia praesentium dolor.",
+               "status": "CONFIRMED",
                "tickets": [
                   {
-                     "count": 1295690387,
-                     "ticket_id": "Corporis ex quis reprehenderit molestiae fugit."
+                     "count": 2034419787,
+                     "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
                   },
                   {
-                     "count": 1295690387,
-                     "ticket_id": "Corporis ex quis reprehenderit molestiae fugit."
-                  },
-                  {
-                     "count": 1295690387,
-                     "ticket_id": "Corporis ex quis reprehenderit molestiae fugit."
+                     "count": 2034419787,
+                     "ticket_id": "Voluptas ex voluptatem molestias veritatis laboriosam qui."
                   }
                ],
-               "warning_reason": "PRICE_INCREASE"
+               "warning_reason": "UNSPECIFIED_WARNING_REASON"
             }
          ],
-         "merchant_id": "Iste unde et deleniti rem illum officia.",
-         "order_id": "Necessitatibus velit consequuntur et.",
+         "merchant_id": "Impedit voluptatem suscipit incidunt dolore.",
+         "order_id": "Quo soluta adipisci error omnis.",
          "payment_information": {
             "deposit": {
                "deposit": {
-                  "currency_code": "Sit quae.",
-                  "price_micros": 6250006249689697416,
-                  "pricing_option_tag": "Perferendis iusto ea quae est quam."
+                  "currency_code": "Dolore omnis est architecto.",
+                  "price_micros": 941384116037444211,
+                  "pricing_option_tag": "Est quis."
                },
-               "deposit_type": "FIXED_RATE_DEFAULT",
-               "min_advance_cancellation_sec": 2682111425714885120
+               "deposit_type": "PER_PERSON",
+               "min_advance_cancellation_sec": "Facilis sint velit."
             },
             "fees": {
-               "currency_code": "Sit quae.",
-               "price_micros": 6250006249689697416,
-               "pricing_option_tag": "Perferendis iusto ea quae est quam."
+               "currency_code": "Dolore omnis est architecto.",
+               "price_micros": 941384116037444211,
+               "pricing_option_tag": "Est quis."
             },
             "fees_and_taxes": {
-               "currency_code": "Sit quae.",
-               "price_micros": 6250006249689697416,
-               "pricing_option_tag": "Perferendis iusto ea quae est quam."
+               "currency_code": "Dolore omnis est architecto.",
+               "price_micros": 941384116037444211,
+               "pricing_option_tag": "Est quis."
             },
-            "fraud_signals": "Iusto amet pariatur.",
-            "md_merchant_data": "Saepe quia.",
+            "fraud_signals": "Et corrupti sed suscipit qui maiores maiores.",
+            "md_merchant_data": "Delectus reiciendis voluptatem odio quibusdam.",
             "no_show_fee": {
                "fee": {
-                  "currency_code": "Sit quae.",
-                  "price_micros": 6250006249689697416,
-                  "pricing_option_tag": "Perferendis iusto ea quae est quam."
+                  "currency_code": "Dolore omnis est architecto.",
+                  "price_micros": 941384116037444211,
+                  "pricing_option_tag": "Est quis."
                },
                "fee_type": "PER_PERSON"
             },
-            "pa_response": "Pariatur quia et.",
-            "payment_option_id": "Facere tempore provident impedit veniam incidunt suscipit.",
-            "payment_processed_by": "PROCESSED_BY_GOOGLE",
-            "payment_transaction_id": "Tenetur exercitationem non.",
-            "prepayment_status": "PREPAYMENT_PROVIDED",
+            "pa_response": "Delectus maiores.",
+            "payment_option_id": "Nobis facilis vel.",
+            "payment_processed_by": "PROCESSED_BY_PARTNER",
+            "payment_transaction_id": "Adipisci quibusdam.",
+            "prepayment_status": "PREPAYMENT_CREDITED",
             "price": {
-               "currency_code": "Sit quae.",
-               "price_micros": 6250006249689697416,
-               "pricing_option_tag": "Perferendis iusto ea quae est quam."
+               "currency_code": "Dolore omnis est architecto.",
+               "price_micros": 941384116037444211,
+               "pricing_option_tag": "Est quis."
             },
             "tax_amount": {
-               "currency_code": "Sit quae.",
-               "price_micros": 6250006249689697416,
-               "pricing_option_tag": "Perferendis iusto ea quae est quam."
+               "currency_code": "Dolore omnis est architecto.",
+               "price_micros": 941384116037444211,
+               "pricing_option_tag": "Est quis."
             },
-            "user_payment_option_id": "Sapiente saepe libero quaerat velit quam."
+            "user_payment_option_id": "Maxime officia voluptatem."
          },
          "user_information": {
             "address": {
-               "country": "Vel et vel.",
-               "locality": "Illum optio.",
-               "postal_code": "Porro molestiae quam dignissimos illum quia praesentium.",
-               "region": "Praesentium nemo quia molestias.",
-               "street_address": "Esse necessitatibus officia nihil at mollitia nobis."
+               "country": "Inventore dolor ab omnis.",
+               "locality": "Qui blanditiis molestias cum qui eius.",
+               "postal_code": "Sed quasi asperiores sed eum officia.",
+               "region": "Quo nihil quaerat et totam sit.",
+               "street_address": "Quia consectetur veritatis vel suscipit recusandae quasi."
             },
-            "email": "Rerum excepturi ea accusamus illo.",
-            "family_name": "Repudiandae enim voluptas quia sed tenetur possimus.",
-            "given_name": "Debitis hic id qui.",
-            "language_code": "Reiciendis expedita consectetur at nulla.",
-            "telephone": "In nostrum quae sint.",
-            "user_id": "Et voluptatibus eius soluta."
+            "email": "Officiis sunt praesentium molestias excepturi.",
+            "family_name": "Error perspiciatis.",
+            "given_name": "Excepturi quisquam necessitatibus dolorem.",
+            "language_code": "Voluptatem consectetur at repellat quo.",
+            "telephone": "Maiores laborum porro.",
+            "user_id": "Eaque aut."
          }
       },
       "payment_processing_parameters": {
-         "payment_method_token": "Sunt quod quos architecto iure quia quibusdam.",
-         "payment_processor": "Laboriosam est delectus quo quo.",
-         "processor": "PAYMENT_PROCESSOR_UNSPECIFIED",
+         "payment_method_token": "Et a quia odio.",
+         "payment_processor": "Animi unde nobis aliquid rem.",
+         "processor": "PROCESSOR_BRAINTREE",
          "tokenization_config": {
             "allowed_auth_methods": [
-               "PAN_ONLY",
-               "AUTH_METHOD_UNSPECIFIED",
+               "CRYPTOGRAM_3DS",
                "AUTH_METHOD_UNSPECIFIED"
             ],
             "billing_information_format": "BILLING_INFORMATION_FORMAT_UNSPECIFIED",
             "card_network_parameters": [
                {
-                  "acquirer_bin": "Sit molestiae sed quasi.",
-                  "acquirer_merchant_id": "Sed eum officia.",
-                  "card_network": "DISCOVER"
+                  "acquirer_bin": "Non eius commodi iure optio.",
+                  "acquirer_merchant_id": "Laboriosam expedita iusto qui sint minus rerum.",
+                  "card_network": "MASTERCARD"
                },
                {
-                  "acquirer_bin": "Sit molestiae sed quasi.",
-                  "acquirer_merchant_id": "Sed eum officia.",
-                  "card_network": "DISCOVER"
+                  "acquirer_bin": "Non eius commodi iure optio.",
+                  "acquirer_merchant_id": "Laboriosam expedita iusto qui sint minus rerum.",
+                  "card_network": "MASTERCARD"
                },
                {
-                  "acquirer_bin": "Sit molestiae sed quasi.",
-                  "acquirer_merchant_id": "Sed eum officia.",
-                  "card_network": "DISCOVER"
-               },
-               {
-                  "acquirer_bin": "Sit molestiae sed quasi.",
-                  "acquirer_merchant_id": "Sed eum officia.",
-                  "card_network": "DISCOVER"
+                  "acquirer_bin": "Non eius commodi iure optio.",
+                  "acquirer_merchant_id": "Laboriosam expedita iusto qui sint minus rerum.",
+                  "card_network": "MASTERCARD"
                }
             ],
-            "merchant_of_record_name": "Blanditiis molestias.",
-            "payment_country_code": "Qui eius expedita quo nihil.",
+            "merchant_of_record_name": "Voluptatem rerum ex.",
+            "payment_country_code": "Est et.",
             "tokenization_parameter": {
-               "Eaque aut.": "Excepturi quisquam necessitatibus dolorem.",
-               "Error perspiciatis.": "Inventore dolor ab omnis.",
-               "Sed exercitationem rem similique aut necessitatibus ullam.": "Eius sequi autem unde laudantium aspernatur."
+               "Aut quibusdam delectus assumenda.": "Ut deleniti minima.",
+               "Eaque qui a repudiandae.": "Facilis voluptatem dolorem.",
+               "Neque dolor.": "Enim architecto error odio a."
             }
          },
-         "unparsed_payment_method_token": "Possimus consequatur sequi asperiores quasi.",
-         "version": "Animi quidem veniam molestiae."
+         "unparsed_payment_method_token": "Modi iure.",
+         "version": "Reprehenderit ipsum expedita."
       }
-   }' --username "Autem ipsam facilis delectus ut et." --password "Qui asperiores."
+   }' --username "Voluptates ea ipsum." --password "Labore qui provident quibusdam architecto doloremque et."
 `, os.Args[0])
 }
 
@@ -1266,14 +1361,14 @@ Example:
     `+os.Args[0]+` order list-orders --body '{
       "order_ids": {
          "order_id": [
-            "Voluptatem temporibus itaque error dolores odio.",
-            "Quis modi autem quidem quaerat.",
-            "Repellat qui quod nesciunt sint officiis.",
-            "Et voluptatem neque et id nisi."
+            "Earum ab est nam.",
+            "Qui odio molestias aut corrupti illum.",
+            "Unde molestias.",
+            "Qui voluptatem et sed natus unde."
          ]
       },
-      "user_id": "Omnis qui similique quos tempore maiores."
-   }' --username "Nisi qui." --password "Mollitia aut quaerat quasi."
+      "user_id": "Dolores quae."
+   }' --username "Totam ut reprehenderit." --password "Et accusantium perspiciatis."
 `, os.Args[0])
 }
 
@@ -1303,15 +1398,14 @@ BatchGetWaitEstimates implements batch_get_wait_estimates.
 
 Example:
     `+os.Args[0]+` waitlist batch-get-wait-estimates --body '{
-      "merchant_id": "Ipsum praesentium tenetur veniam molestiae sed distinctio.",
+      "merchant_id": "Sint ea officia labore.",
       "party_size": [
-         1195391964,
-         1522198561,
-         1006042009,
-         2009461095
+         1456607358,
+         1218899136,
+         1607272068
       ],
-      "service_id": "Nulla dicta repellendus labore."
-   }' --username "Dolor quaerat quae." --password "Iusto quas dolor."
+      "service_id": "Ut eaque aut qui in incidunt vel."
+   }' --username "Impedit et repellat." --password "In sed ut quo."
 `, os.Args[0])
 }
 
@@ -1325,27 +1419,27 @@ CreateWaitlistEntry implements create_waitlist_entry.
 
 Example:
     `+os.Args[0]+` waitlist create-waitlist-entry --body '{
-      "additional_request": "Aut possimus occaecati velit.",
-      "idempotency_token": "Qui natus.",
-      "merchant_id": "Sint non.",
-      "party_size": 423053857,
-      "service_id": "Cupiditate non culpa saepe rem.",
+      "additional_request": "Est earum officia sed ex praesentium ullam.",
+      "idempotency_token": "Voluptate minus.",
+      "merchant_id": "Impedit impedit aut.",
+      "party_size": 305471617,
+      "service_id": "Autem debitis.",
       "user_information": {
          "address": {
-            "country": "Vel et vel.",
-            "locality": "Illum optio.",
-            "postal_code": "Porro molestiae quam dignissimos illum quia praesentium.",
-            "region": "Praesentium nemo quia molestias.",
-            "street_address": "Esse necessitatibus officia nihil at mollitia nobis."
+            "country": "Inventore dolor ab omnis.",
+            "locality": "Qui blanditiis molestias cum qui eius.",
+            "postal_code": "Sed quasi asperiores sed eum officia.",
+            "region": "Quo nihil quaerat et totam sit.",
+            "street_address": "Quia consectetur veritatis vel suscipit recusandae quasi."
          },
-         "email": "Rerum excepturi ea accusamus illo.",
-         "family_name": "Repudiandae enim voluptas quia sed tenetur possimus.",
-         "given_name": "Debitis hic id qui.",
-         "language_code": "Reiciendis expedita consectetur at nulla.",
-         "telephone": "In nostrum quae sint.",
-         "user_id": "Et voluptatibus eius soluta."
+         "email": "Officiis sunt praesentium molestias excepturi.",
+         "family_name": "Error perspiciatis.",
+         "given_name": "Excepturi quisquam necessitatibus dolorem.",
+         "language_code": "Voluptatem consectetur at repellat quo.",
+         "telephone": "Maiores laborum porro.",
+         "user_id": "Eaque aut."
       }
-   }' --username "Iure aliquam cumque autem sapiente consequatur qui." --password "Animi perspiciatis."
+   }' --username "Possimus praesentium accusamus quod corporis." --password "Aut asperiores necessitatibus aut repudiandae nesciunt."
 `, os.Args[0])
 }
 
@@ -1359,8 +1453,8 @@ GetWaitlistEntry implements get_waitlist_entry.
 
 Example:
     `+os.Args[0]+` waitlist get-waitlist-entry --body '{
-      "waitlist_entry_id": "Quia asperiores eos."
-   }' --username "Et quia provident earum." --password "Similique esse a provident dolores omnis."
+      "waitlist_entry_id": "Sit aut blanditiis temporibus illum reprehenderit qui."
+   }' --username "Quos mollitia delectus unde debitis exercitationem." --password "Excepturi enim nihil placeat quia sit magni."
 `, os.Args[0])
 }
 
@@ -1374,7 +1468,7 @@ DeleteWaitlistEntry implements delete_waitlist_entry.
 
 Example:
     `+os.Args[0]+` waitlist delete-waitlist-entry --body '{
-      "waitlist_entry_id": "Sed ut."
-   }' --username "Reprehenderit qui." --password "Voluptatem aperiam earum eos sequi non."
+      "waitlist_entry_id": "Aut dolor impedit."
+   }' --username "Consequuntur consequatur aut doloribus." --password "Consectetur dolor et occaecati omnis et."
 `, os.Args[0])
 }

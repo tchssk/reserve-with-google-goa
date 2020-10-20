@@ -911,8 +911,8 @@ type WaitLengthResponseBody struct {
 // EstimatedSeatTimeRangeResponseBody is used to define fields on response body
 // types.
 type EstimatedSeatTimeRangeResponseBody struct {
-	StartSeconds *int64 `form:"start_seconds,omitempty" json:"start_seconds,omitempty" xml:"start_seconds,omitempty"`
-	EndSeconds   *int64 `form:"end_seconds,omitempty" json:"end_seconds,omitempty" xml:"end_seconds,omitempty"`
+	StartSeconds *string `form:"start_seconds,omitempty" json:"start_seconds,omitempty" xml:"start_seconds,omitempty"`
+	EndSeconds   *string `form:"end_seconds,omitempty" json:"end_seconds,omitempty" xml:"end_seconds,omitempty"`
 }
 
 // UserInformationRequestBodyRequestBody is used to define fields on request
@@ -954,12 +954,12 @@ type WaitlistEntryResponseBody struct {
 // WaitlistEntryStateTimesResponseBody is used to define fields on response
 // body types.
 type WaitlistEntryStateTimesResponseBody struct {
-	CreatedTimeSeconds        *int64 `form:"created_time_seconds,omitempty" json:"created_time_seconds,omitempty" xml:"created_time_seconds,omitempty"`
-	CanceledTimeSeconds       *int64 `form:"canceled_time_seconds,omitempty" json:"canceled_time_seconds,omitempty" xml:"canceled_time_seconds,omitempty"`
-	ServiceReadiedTimeSeconds *int64 `form:"service_readied_time_seconds,omitempty" json:"service_readied_time_seconds,omitempty" xml:"service_readied_time_seconds,omitempty"`
-	CheckedInTimeSeconds      *int64 `form:"checked_in_time_seconds,omitempty" json:"checked_in_time_seconds,omitempty" xml:"checked_in_time_seconds,omitempty"`
-	SeatedTimeSeconds         *int64 `form:"seated_time_seconds,omitempty" json:"seated_time_seconds,omitempty" xml:"seated_time_seconds,omitempty"`
-	MarkedNoShowTimeSeconds   *int64 `form:"marked_no_show_time_seconds,omitempty" json:"marked_no_show_time_seconds,omitempty" xml:"marked_no_show_time_seconds,omitempty"`
+	CreatedTimeSeconds        *string `form:"created_time_seconds,omitempty" json:"created_time_seconds,omitempty" xml:"created_time_seconds,omitempty"`
+	CanceledTimeSeconds       *string `form:"canceled_time_seconds,omitempty" json:"canceled_time_seconds,omitempty" xml:"canceled_time_seconds,omitempty"`
+	ServiceReadiedTimeSeconds *string `form:"service_readied_time_seconds,omitempty" json:"service_readied_time_seconds,omitempty" xml:"service_readied_time_seconds,omitempty"`
+	CheckedInTimeSeconds      *string `form:"checked_in_time_seconds,omitempty" json:"checked_in_time_seconds,omitempty" xml:"checked_in_time_seconds,omitempty"`
+	SeatedTimeSeconds         *string `form:"seated_time_seconds,omitempty" json:"seated_time_seconds,omitempty" xml:"seated_time_seconds,omitempty"`
+	MarkedNoShowTimeSeconds   *string `form:"marked_no_show_time_seconds,omitempty" json:"marked_no_show_time_seconds,omitempty" xml:"marked_no_show_time_seconds,omitempty"`
 }
 
 // NewBatchGetWaitEstimatesRequestBody builds the HTTP request body from the

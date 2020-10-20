@@ -23,7 +23,7 @@ func BuildBatchGetWaitEstimatesPayload(waitlistBatchGetWaitEstimatesBody string,
 	{
 		err = json.Unmarshal([]byte(waitlistBatchGetWaitEstimatesBody), &body)
 		if err != nil {
-			return nil, fmt.Errorf("invalid JSON for body, \nerror: %s, \nexample of valid JSON:\n%s", err, "'{\n      \"merchant_id\": \"Ipsum praesentium tenetur veniam molestiae sed distinctio.\",\n      \"party_size\": [\n         1195391964,\n         1522198561,\n         1006042009,\n         2009461095\n      ],\n      \"service_id\": \"Nulla dicta repellendus labore.\"\n   }'")
+			return nil, fmt.Errorf("invalid JSON for body, \nerror: %s, \nexample of valid JSON:\n%s", err, "'{\n      \"merchant_id\": \"Sint ea officia labore.\",\n      \"party_size\": [\n         1456607358,\n         1218899136,\n         1607272068\n      ],\n      \"service_id\": \"Ut eaque aut qui in incidunt vel.\"\n   }'")
 		}
 		if body.PartySize == nil {
 			err = goa.MergeErrors(err, goa.MissingFieldError("party_size", "body"))
@@ -67,7 +67,7 @@ func BuildCreateWaitlistEntryPayload(waitlistCreateWaitlistEntryBody string, wai
 	{
 		err = json.Unmarshal([]byte(waitlistCreateWaitlistEntryBody), &body)
 		if err != nil {
-			return nil, fmt.Errorf("invalid JSON for body, \nerror: %s, \nexample of valid JSON:\n%s", err, "'{\n      \"additional_request\": \"Aut possimus occaecati velit.\",\n      \"idempotency_token\": \"Qui natus.\",\n      \"merchant_id\": \"Sint non.\",\n      \"party_size\": 423053857,\n      \"service_id\": \"Cupiditate non culpa saepe rem.\",\n      \"user_information\": {\n         \"address\": {\n            \"country\": \"Vel et vel.\",\n            \"locality\": \"Illum optio.\",\n            \"postal_code\": \"Porro molestiae quam dignissimos illum quia praesentium.\",\n            \"region\": \"Praesentium nemo quia molestias.\",\n            \"street_address\": \"Esse necessitatibus officia nihil at mollitia nobis.\"\n         },\n         \"email\": \"Rerum excepturi ea accusamus illo.\",\n         \"family_name\": \"Repudiandae enim voluptas quia sed tenetur possimus.\",\n         \"given_name\": \"Debitis hic id qui.\",\n         \"language_code\": \"Reiciendis expedita consectetur at nulla.\",\n         \"telephone\": \"In nostrum quae sint.\",\n         \"user_id\": \"Et voluptatibus eius soluta.\"\n      }\n   }'")
+			return nil, fmt.Errorf("invalid JSON for body, \nerror: %s, \nexample of valid JSON:\n%s", err, "'{\n      \"additional_request\": \"Est earum officia sed ex praesentium ullam.\",\n      \"idempotency_token\": \"Voluptate minus.\",\n      \"merchant_id\": \"Impedit impedit aut.\",\n      \"party_size\": 305471617,\n      \"service_id\": \"Autem debitis.\",\n      \"user_information\": {\n         \"address\": {\n            \"country\": \"Inventore dolor ab omnis.\",\n            \"locality\": \"Qui blanditiis molestias cum qui eius.\",\n            \"postal_code\": \"Sed quasi asperiores sed eum officia.\",\n            \"region\": \"Quo nihil quaerat et totam sit.\",\n            \"street_address\": \"Quia consectetur veritatis vel suscipit recusandae quasi.\"\n         },\n         \"email\": \"Officiis sunt praesentium molestias excepturi.\",\n         \"family_name\": \"Error perspiciatis.\",\n         \"given_name\": \"Excepturi quisquam necessitatibus dolorem.\",\n         \"language_code\": \"Voluptatem consectetur at repellat quo.\",\n         \"telephone\": \"Maiores laborum porro.\",\n         \"user_id\": \"Eaque aut.\"\n      }\n   }'")
 		}
 		if body.UserInformation == nil {
 			err = goa.MergeErrors(err, goa.MissingFieldError("user_information", "body"))
@@ -111,7 +111,7 @@ func BuildGetWaitlistEntryPayload(waitlistGetWaitlistEntryBody string, waitlistG
 	{
 		err = json.Unmarshal([]byte(waitlistGetWaitlistEntryBody), &body)
 		if err != nil {
-			return nil, fmt.Errorf("invalid JSON for body, \nerror: %s, \nexample of valid JSON:\n%s", err, "'{\n      \"waitlist_entry_id\": \"Quia asperiores eos.\"\n   }'")
+			return nil, fmt.Errorf("invalid JSON for body, \nerror: %s, \nexample of valid JSON:\n%s", err, "'{\n      \"waitlist_entry_id\": \"Sit aut blanditiis temporibus illum reprehenderit qui.\"\n   }'")
 		}
 	}
 	var username string
@@ -142,7 +142,7 @@ func BuildDeleteWaitlistEntryPayload(waitlistDeleteWaitlistEntryBody string, wai
 	{
 		err = json.Unmarshal([]byte(waitlistDeleteWaitlistEntryBody), &body)
 		if err != nil {
-			return nil, fmt.Errorf("invalid JSON for body, \nerror: %s, \nexample of valid JSON:\n%s", err, "'{\n      \"waitlist_entry_id\": \"Sed ut.\"\n   }'")
+			return nil, fmt.Errorf("invalid JSON for body, \nerror: %s, \nexample of valid JSON:\n%s", err, "'{\n      \"waitlist_entry_id\": \"Aut dolor impedit.\"\n   }'")
 		}
 	}
 	var username string

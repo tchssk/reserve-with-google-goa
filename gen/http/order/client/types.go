@@ -41,7 +41,7 @@ type CheckOrderFulfillabilityResponseBody struct {
 	Fulfillability    *OrderFulfillabilityResponseBody `form:"fulfillability,omitempty" json:"fulfillability,omitempty" xml:"fulfillability,omitempty"`
 	FeesAndTaxes      *PriceResponseBody               `form:"fees_and_taxes,omitempty" json:"fees_and_taxes,omitempty" xml:"fees_and_taxes,omitempty"`
 	Fees              *FeesResponseBody                `form:"fees,omitempty" json:"fees,omitempty" xml:"fees,omitempty"`
-	CartExpirationSec *int64                           `form:"cart_expiration_sec,omitempty" json:"cart_expiration_sec,omitempty" xml:"cart_expiration_sec,omitempty"`
+	CartExpirationSec *string                          `form:"cart_expiration_sec,omitempty" json:"cart_expiration_sec,omitempty" xml:"cart_expiration_sec,omitempty"`
 }
 
 // CreateOrderResponseBody is the type of the "order" service "create_order"
@@ -672,8 +672,8 @@ type ListOrdersGatewayTimeoutResponseBody struct {
 // types.
 type LineItemRequestBodyRequestBody struct {
 	ServiceID         string                                   `form:"service_id" json:"service_id" xml:"service_id"`
-	StartSec          int64                                    `form:"start_sec" json:"start_sec" xml:"start_sec"`
-	DurationSec       int64                                    `form:"duration_sec" json:"duration_sec" xml:"duration_sec"`
+	StartSec          string                                   `form:"start_sec" json:"start_sec" xml:"start_sec"`
+	DurationSec       string                                   `form:"duration_sec" json:"duration_sec" xml:"duration_sec"`
 	Tickets           []*OrderedTicketsRequestBodyRequestBody  `form:"tickets,omitempty" json:"tickets,omitempty" xml:"tickets,omitempty"`
 	Price             *PriceRequestBodyRequestBody             `form:"price" json:"price" xml:"price"`
 	Status            *string                                  `form:"status,omitempty" json:"status,omitempty" xml:"status,omitempty"`
@@ -730,8 +730,8 @@ type LineItemFulfillabilityResponseBody struct {
 // LineItemResponseBody is used to define fields on response body types.
 type LineItemResponseBody struct {
 	ServiceID         *string                        `form:"service_id,omitempty" json:"service_id,omitempty" xml:"service_id,omitempty"`
-	StartSec          *int64                         `form:"start_sec,omitempty" json:"start_sec,omitempty" xml:"start_sec,omitempty"`
-	DurationSec       *int64                         `form:"duration_sec,omitempty" json:"duration_sec,omitempty" xml:"duration_sec,omitempty"`
+	StartSec          *string                        `form:"start_sec,omitempty" json:"start_sec,omitempty" xml:"start_sec,omitempty"`
+	DurationSec       *string                        `form:"duration_sec,omitempty" json:"duration_sec,omitempty" xml:"duration_sec,omitempty"`
 	Tickets           []*OrderedTicketsResponseBody  `form:"tickets,omitempty" json:"tickets,omitempty" xml:"tickets,omitempty"`
 	Price             *PriceResponseBody             `form:"price,omitempty" json:"price,omitempty" xml:"price,omitempty"`
 	Status            *string                        `form:"status,omitempty" json:"status,omitempty" xml:"status,omitempty"`
@@ -884,7 +884,7 @@ type PaymentInformationRequestBodyRequestBody struct {
 // DepositRequestBodyRequestBody is used to define fields on request body types.
 type DepositRequestBodyRequestBody struct {
 	Deposit                   *PriceRequestBodyRequestBody `form:"deposit" json:"deposit" xml:"deposit"`
-	MinAdvanceCancellationSec int64                        `form:"min_advance_cancellation_sec" json:"min_advance_cancellation_sec" xml:"min_advance_cancellation_sec"`
+	MinAdvanceCancellationSec string                       `form:"min_advance_cancellation_sec" json:"min_advance_cancellation_sec" xml:"min_advance_cancellation_sec"`
 	DepositType               string                       `form:"deposit_type" json:"deposit_type" xml:"deposit_type"`
 }
 
@@ -976,7 +976,7 @@ type PaymentInformationResponseBody struct {
 // DepositResponseBody is used to define fields on response body types.
 type DepositResponseBody struct {
 	Deposit                   *PriceResponseBody `form:"deposit,omitempty" json:"deposit,omitempty" xml:"deposit,omitempty"`
-	MinAdvanceCancellationSec *int64             `form:"min_advance_cancellation_sec,omitempty" json:"min_advance_cancellation_sec,omitempty" xml:"min_advance_cancellation_sec,omitempty"`
+	MinAdvanceCancellationSec *string            `form:"min_advance_cancellation_sec,omitempty" json:"min_advance_cancellation_sec,omitempty" xml:"min_advance_cancellation_sec,omitempty"`
 	DepositType               *string            `form:"deposit_type,omitempty" json:"deposit_type,omitempty" xml:"deposit_type,omitempty"`
 }
 

@@ -73,7 +73,7 @@ type CheckAvailabilityPayload struct {
 type CheckAvailabilityResponse struct {
 	Slot                     *Slot
 	CountAvailable           int32
-	LastOnlineCancellableSec *int64
+	LastOnlineCancellableSec *string
 	DurationRequirement      *string
 	AvailabilityUpdate       *AvailabilityUpdate
 }
@@ -147,8 +147,8 @@ type BatchAvailabilityLookupRequest struct {
 
 type SlotTime struct {
 	ServiceID        string
-	StartSec         int64
-	DurationSec      *int64
+	StartSec         string
+	DurationSec      *string
 	AvailabilityTag  *string
 	ResourceIds      *ResourceIds
 	ConfirmationMode *string
@@ -172,8 +172,8 @@ type CheckAvailabilityRequest struct {
 type Slot struct {
 	MerchantID       *string
 	ServiceID        *string
-	StartSec         *int64
-	DurationSec      *int64
+	StartSec         *string
+	DurationSec      *string
 	AvailabilityTag  *string
 	Resources        *ResourceIds
 	ConfirmationMode *string
@@ -247,7 +247,7 @@ type Price struct {
 
 type Deposit struct {
 	Deposit                   *Price
-	MinAdvanceCancellationSec int64
+	MinAdvanceCancellationSec string
 	DepositType               string
 }
 
@@ -302,8 +302,8 @@ type OfferInfo struct {
 
 type UserPaymentOption struct {
 	UserPaymentOptionID string
-	ValidStartTimeSec   *int64
-	ValidEndTimeSec     *int64
+	ValidStartTimeSec   *string
+	ValidEndTimeSec     *string
 	Type                string
 	OriginalCount       int32
 	CurrentCount        int32
